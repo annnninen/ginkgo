@@ -1,1766 +1,916 @@
 <!DOCTYPE html>
-<html lang="fi-FI">
-
+<html lang="fi">
 <head>
-	<title></title>
-	<meta content="summary_large_image" name="twitter:card" />
-	<meta content="website" property="og:type" />
-	<meta content="" property="og:description" />
-	<meta content="" property="og:url" />
-	<meta content="assets/1_13084179_large.jpg" property="og:image" />
-	<meta content="" property="og:title" />
-	<meta content="" name="description" />
-	<meta charset="utf-8" />
-	<meta content="width=device-width" name="viewport" />
-	<style>
-		.bee-row,
-		.bee-row-content {
-			position: relative
-		}
-
-		.bee-button-content {
-			text-align: center
-		}
-
-		.bee-row-3,
-		.bee-row-3 .bee-row-content,
-		.bee-row-4,
-		.bee-row-4 .bee-row-content {
-			background-size: auto;
-			background-repeat: no-repeat
-		}
-
-		body {
-			background-color: #ffffff;
-			color: #000000;
-			font-family: Georgia, Times, Times New Roman, serif
-		}
-
-		.bee-row-17 .bee-col-1 .bee-block-3 a,
-		.bee-row-17 .bee-col-2 .bee-block-3 a,
-		.bee-row-17 .bee-col-3 .bee-block-3 a,
-		.bee-row-17 .bee-col-4 .bee-block-3 a,
-		.bee-row-21 .bee-col-2 .bee-block-2 a,
-		.bee-row-21 .bee-col-2 .bee-block-3 a,
-		.bee-row-29 .bee-col-1 .bee-block-4 a,
-		.bee-row-3 .bee-col-1 .bee-block-2 a,
-		.bee-row-30 .bee-col-1 .bee-block-3 a,
-		.bee-row-30 .bee-col-1 .bee-block-6 a,
-		.bee-row-30 .bee-col-1 .bee-block-9 a,
-		.bee-row-7 .bee-col-1 .bee-block-3 a,
-		.bee-row-7 .bee-col-2 .bee-block-3 a,
-		.bee-row-9 .bee-col-1 .bee-block-3 a,
-		.bee-row-9 .bee-col-2 .bee-block-3 a,
-		a {
-			color: #ffffff
-		}
-
-		* {
-			box-sizing: border-box
-		}
-
-		body,
-		h1,
-		h2,
-		h3,
-		p {
-			margin: 0
-		}
-
-		.bee-row-content {
-			max-width: 1245px;
-			margin: 0 auto;
-			display: flex
-		}
-
-		.bee-row-content .bee-col-w3 {
-			flex-basis: 25%
-		}
-
-		.bee-row-content .bee-col-w4 {
-			flex-basis: 33.3333333333%
-		}
-
-		.bee-row-content .bee-col-w6 {
-			flex-basis: 50%
-		}
-
-		.bee-row-content .bee-col-w12 {
-			flex-basis: 100%
-		}
-
-		.bee-button a,
-		.bee-icon .bee-icon-label-right a,
-		.bee-menu ul li a {
-			text-decoration: none
-		}
-
-		.bee-divider,
-		.bee-image {
-			overflow: auto
-		}
-
-		.bee-divider .center,
-		.bee-image .bee-center {
-			margin: 0 auto
-		}
-
-		.bee-row-11 .bee-col-1 .bee-block-1,
-		.bee-row-3 .bee-col-2 .bee-block-1 {
-			width: 100%
-		}
-
-		.bee-icon {
-			display: inline-block;
-			vertical-align: middle
-		}
-
-		.bee-icon .bee-content {
-			display: flex;
-			align-items: center
-		}
-
-		.bee-image img {
-			display: block;
-			width: 100%
-		}
-
-		.bee-list ul {
-			margin: 0;
-			padding: 0 0 0 20px
-		}
-
-		.bee-list ul li {
-			list-style-position: outside
-		}
-
-		.bee-menu ul {
-			list-style-type: none;
-			margin: 0;
-			padding: 0
-		}
-
-		.bee-menu ul.bee-horizontal li {
-			display: inline-block
-		}
-
-		.bee-paragraph {
-			overflow-wrap: anywhere
-		}
-
-		.bee-social .icon img {
-			max-height: 32px
-		}
-
-		.bee-row-1,
-		.bee-row-10,
-		.bee-row-11,
-		.bee-row-12,
-		.bee-row-13,
-		.bee-row-14,
-		.bee-row-2,
-		.bee-row-27,
-		.bee-row-28,
-		.bee-row-29,
-		.bee-row-30,
-		.bee-row-31 {
-			background-repeat: no-repeat
-		}
-
-		.bee-row-1 .bee-row-content,
-		.bee-row-12 .bee-row-content,
-		.bee-row-13 .bee-row-content,
-		.bee-row-2 .bee-row-content,
-		.bee-row-28 .bee-row-content,
-		.bee-row-29 .bee-row-content,
-		.bee-row-30 .bee-row-content,
-		.bee-row-31 .bee-row-content,
-		.bee-row-32 .bee-row-content,
-		.bee-row-33 .bee-row-content {
-			background-color: #ffffff;
-			background-repeat: no-repeat;
-			border-radius: 0;
-			color: #000000
-		}
-
-		.bee-row-10 .bee-col-1,
-		.bee-row-11 .bee-col-1,
-		.bee-row-13 .bee-col-2,
-		.bee-row-14 .bee-col-1,
-		.bee-row-15 .bee-col-1,
-		.bee-row-16 .bee-col-1,
-		.bee-row-17 .bee-col-1,
-		.bee-row-17 .bee-col-2,
-		.bee-row-17 .bee-col-3,
-		.bee-row-17 .bee-col-4,
-		.bee-row-18 .bee-col-1,
-		.bee-row-19 .bee-col-1,
-		.bee-row-2 .bee-col-1,
-		.bee-row-22 .bee-col-1,
-		.bee-row-23 .bee-col-1,
-		.bee-row-24 .bee-col-1,
-		.bee-row-25 .bee-col-1,
-		.bee-row-25 .bee-col-2,
-		.bee-row-25 .bee-col-3,
-		.bee-row-26 .bee-col-1,
-		.bee-row-27 .bee-col-1,
-		.bee-row-28 .bee-col-1,
-		.bee-row-29 .bee-col-1,
-		.bee-row-30 .bee-col-1,
-		.bee-row-31 .bee-col-1,
-		.bee-row-32 .bee-col-1,
-		.bee-row-33 .bee-col-1,
-		.bee-row-33 .bee-col-2,
-		.bee-row-33 .bee-col-3,
-		.bee-row-33 .bee-col-4,
-		.bee-row-34 .bee-col-1,
-		.bee-row-35 .bee-col-1,
-		.bee-row-4 .bee-col-1,
-		.bee-row-7 .bee-col-1,
-		.bee-row-7 .bee-col-2,
-		.bee-row-8 .bee-col-1,
-		.bee-row-9 .bee-col-1,
-		.bee-row-9 .bee-col-2 {
-			padding-bottom: 5px;
-			padding-top: 5px
-		}
-
-		.bee-row-2 .bee-col-1 .bee-block-1 {
-			color: #101112;
-			font-family: inherit;
-			font-size: 21px;
-			font-weight: 400;
-			padding: 10px;
-			text-align: left
-		}
-
-		.bee-row-3 .bee-row-content {
-			background-color: #ffffff;
-			border-radius: 0;
-			color: #000000
-		}
-
-		.bee-row-3 .bee-col-1 {
-			padding: 5px 60px;
-			display: flex;
-			flex-direction: column;
-			justify-content: center
-		}
-
-		.bee-row-3 .bee-col-1 .bee-block-1 {
-			padding: 10px 10px 20px;
-			text-align: center;
-			width: 100%
-		}
-
-		.bee-row-3 .bee-col-1 .bee-block-2 {
-			padding: 20px 10px 10px
-		}
-
-		.bee-row-3 .bee-col-1 .bee-block-3 {
-			padding: 10px 10px 30px;
-			text-align: left
-		}
-
-		.bee-row-21 .bee-col-1,
-		.bee-row-21 .bee-col-2,
-		.bee-row-3 .bee-col-2,
-		.bee-row-5 .bee-col-1 {
-			padding-bottom: 5px;
-			padding-top: 5px;
-			display: flex;
-			flex-direction: column;
-			justify-content: center
-		}
-
-		.bee-row-4 .bee-row-content {
-			border-radius: 0;
-			color: #000000
-		}
-
-		.bee-row-16,
-		.bee-row-17,
-		.bee-row-18,
-		.bee-row-24,
-		.bee-row-25,
-		.bee-row-26,
-		.bee-row-5,
-		.bee-row-6,
-		.bee-row-7,
-		.bee-row-8,
-		.bee-row-9 {
-			background-color: #243931;
-			background-repeat: no-repeat
-		}
-
-		.bee-row-17 .bee-row-content,
-		.bee-row-25 .bee-row-content,
-		.bee-row-5 .bee-row-content,
-		.bee-row-6 .bee-row-content,
-		.bee-row-7 .bee-row-content,
-		.bee-row-8 .bee-row-content,
-		.bee-row-9 .bee-row-content {
-			background-color: #243931;
-			background-repeat: no-repeat;
-			border-radius: 0;
-			color: #000000
-		}
-
-		.bee-row-13 .bee-col-1,
-		.bee-row-6 .bee-col-1 {
-			padding: 5px 60px
-		}
-
-		.bee-row-12 .bee-col-1 .bee-block-2,
-		.bee-row-15 .bee-col-1 .bee-block-2,
-		.bee-row-24 .bee-col-1 .bee-block-3,
-		.bee-row-6 .bee-col-1 .bee-block-1 {
-			padding: 10px 60px;
-			text-align: center;
-			width: 100%
-		}
-
-		.bee-row-6 .bee-col-1 .bee-block-2 {
-			padding: 40px
-		}
-
-		.bee-row-17 .bee-col-1 .bee-block-1,
-		.bee-row-17 .bee-col-2 .bee-block-1,
-		.bee-row-17 .bee-col-3 .bee-block-1,
-		.bee-row-17 .bee-col-4 .bee-block-1,
-		.bee-row-7 .bee-col-1 .bee-block-1,
-		.bee-row-7 .bee-col-2 .bee-block-1,
-		.bee-row-9 .bee-col-1 .bee-block-1,
-		.bee-row-9 .bee-col-2 .bee-block-1 {
-			color: #000000;
-			font-family: inherit;
-			font-size: 14px;
-			font-weight: 400;
-			padding-left: 25px;
-			padding-right: 25px;
-			text-align: center
-		}
-
-		.bee-row-17 .bee-col-1 .bee-block-2,
-		.bee-row-17 .bee-col-2 .bee-block-2,
-		.bee-row-17 .bee-col-3 .bee-block-2,
-		.bee-row-17 .bee-col-4 .bee-block-2,
-		.bee-row-7 .bee-col-1 .bee-block-2,
-		.bee-row-7 .bee-col-2 .bee-block-2,
-		.bee-row-9 .bee-col-1 .bee-block-2,
-		.bee-row-9 .bee-col-2 .bee-block-2 {
-			padding: 10px 25px;
-			text-align: center;
-			width: 100%
-		}
-
-		.bee-row-13 .bee-col-2 .bee-block-1,
-		.bee-row-13 .bee-col-2 .bee-block-2,
-		.bee-row-7 .bee-col-1 .bee-block-3,
-		.bee-row-7 .bee-col-2 .bee-block-3,
-		.bee-row-9 .bee-col-1 .bee-block-3,
-		.bee-row-9 .bee-col-2 .bee-block-3 {
-			padding: 10px 60px
-		}
-
-		.bee-row-10 .bee-row-content,
-		.bee-row-19 .bee-row-content,
-		.bee-row-23 .bee-row-content,
-		.bee-row-27 .bee-row-content {
-			background-repeat: no-repeat;
-			border-radius: 0;
-			color: #000000
-		}
-
-		.bee-row-11 .bee-row-content {
-			background-color: #ffffff;
-			background-repeat: no-repeat;
-			border-radius: 30px 30px 0 0;
-			color: #000000
-		}
-
-		.bee-row-12 .bee-col-1 {
-			padding: 5px 30px
-		}
-
-		.bee-row-12 .bee-col-1 .bee-block-1,
-		.bee-row-13 .bee-col-1 .bee-block-1,
-		.bee-row-13 .bee-col-1 .bee-block-2,
-		.bee-row-16 .bee-col-1 .bee-block-4,
-		.bee-row-24 .bee-col-1 .bee-block-2,
-		.bee-row-25 .bee-col-2 .bee-block-1,
-		.bee-row-29 .bee-col-1 .bee-block-1,
-		.bee-row-33 .bee-col-2 .bee-block-1,
-		.bee-row-33 .bee-col-3 .bee-block-3,
-		.bee-row-33 .bee-col-4 .bee-block-1 {
-			padding: 10px
-		}
-
-		.bee-row-12 .bee-col-1 .bee-block-3 {
-			padding: 35px 60px 20px
-		}
-
-		.bee-row-14 .bee-row-content,
-		.bee-row-34 .bee-row-content {
-			background-color: #ffffff;
-			background-repeat: no-repeat;
-			border-radius: 0 0 30px 30px;
-			color: #000000
-		}
-
-		.bee-row-15,
-		.bee-row-19,
-		.bee-row-20,
-		.bee-row-21,
-		.bee-row-22,
-		.bee-row-23 {
-			background-color: #dff2e7;
-			background-repeat: no-repeat
-		}
-
-		.bee-row-15 .bee-row-content,
-		.bee-row-21 .bee-row-content {
-			background-color: #dff2e7;
-			background-repeat: no-repeat;
-			border-radius: 0;
-			color: #000000
-		}
-
-		.bee-row-15 .bee-col-1 .bee-block-3 {
-			padding: 25px
-		}
-
-		.bee-row-16 .bee-row-content,
-		.bee-row-24 .bee-row-content {
-			background-color: #243931;
-			background-repeat: no-repeat;
-			border-radius: 30px 30px 0 0;
-			color: #000000
-		}
-
-		.bee-row-16 .bee-col-1 .bee-block-2,
-		.bee-row-16 .bee-col-1 .bee-block-5 {
-			padding: 30px;
-			text-align: center;
-			width: 100%
-		}
-
-		.bee-row-16 .bee-col-1 .bee-block-3 {
-			padding: 30px 60px
-		}
-
-		.bee-row-17 .bee-col-1 .bee-block-3,
-		.bee-row-17 .bee-col-2 .bee-block-3,
-		.bee-row-17 .bee-col-3 .bee-block-3,
-		.bee-row-17 .bee-col-4 .bee-block-3 {
-			padding: 10px 35px
-		}
-
-		.bee-row-18 .bee-row-content,
-		.bee-row-26 .bee-row-content {
-			background-color: #243931;
-			background-repeat: no-repeat;
-			border-radius: 0 0 30px 30px;
-			color: #000000
-		}
-
-		.bee-row-20 .bee-row-content {
-			background-color: #dff2e7;
-			background-repeat: no-repeat;
-			border-radius: 30px 30px 0 0;
-			color: #000000
-		}
-
-		.bee-row-20 .bee-col-1 {
-			border-bottom: 5px solid transparent;
-			border-left: 5px solid transparent;
-			border-right: 5px solid transparent;
-			border-top: 5px solid transparent;
-			padding-bottom: 5px;
-			padding-top: 5px;
-			border-radius: 0
-		}
-
-		.bee-row-21 .bee-col-1 .bee-block-1 {
-			padding-left: 30px;
-			padding-right: 30px;
-			width: 100%
-		}
-
-		.bee-row-21 .bee-col-2 .bee-block-1 {
-			padding: 10px 60px 10px 30px;
-			text-align: center;
-			width: 100%
-		}
-
-		.bee-row-21 .bee-col-2 .bee-block-2 {
-			padding: 20px 30px 10px
-		}
-
-		.bee-row-21 .bee-col-2 .bee-block-3,
-		.bee-row-33 .bee-col-2 .bee-block-2,
-		.bee-row-33 .bee-col-2 .bee-block-3,
-		.bee-row-33 .bee-col-4 .bee-block-2 {
-			padding: 10px 30px
-		}
-
-		.bee-row-21 .bee-col-2 .bee-block-4 {
-			padding: 10px 25px;
-			text-align: left
-		}
-
-		.bee-row-22 .bee-row-content {
-			background-color: #dff2e7;
-			background-repeat: no-repeat;
-			border-radius: 0 0 30px 30px;
-			color: #000000
-		}
-
-		.bee-row-32,
-		.bee-row-33,
-		.bee-row-34,
-		.bee-row-35,
-		.bee-row-35 .bee-row-content {
-			background-color: #ffffff;
-			background-repeat: no-repeat
-		}
-
-		.bee-row-25 .bee-col-1 .bee-block-1,
-		.bee-row-25 .bee-col-3 .bee-block-1 {
-			padding: 10px 50px
-		}
-
-		.bee-row-29 .bee-col-1 .bee-block-2 {
-			padding: 10px 60px 35px;
-			text-align: center;
-			width: 100%
-		}
-
-		.bee-row-29 .bee-col-1 .bee-block-3,
-		.bee-row-30 .bee-col-1 .bee-block-2,
-		.bee-row-30 .bee-col-1 .bee-block-5,
-		.bee-row-30 .bee-col-1 .bee-block-8 {
-			color: #243931;
-			font-family: inherit;
-			font-size: 20px;
-			font-weight: 400;
-			padding-left: 60px;
-			padding-right: 60px;
-			text-align: left
-		}
-
-		.bee-row-29 .bee-col-1 .bee-block-4,
-		.bee-row-30 .bee-col-1 .bee-block-3,
-		.bee-row-30 .bee-col-1 .bee-block-6,
-		.bee-row-30 .bee-col-1 .bee-block-9 {
-			padding: 15px 60px 10px
-		}
-
-		.bee-row-33 .bee-col-1 .bee-block-1 {
-			padding-bottom: 10px;
-			padding-left: 30px;
-			padding-right: 30px;
-			width: 100%
-		}
-
-		.bee-row-33 .bee-col-3 .bee-block-1 {
-			padding: 10px 30px;
-			text-align: center;
-			width: 100%
-		}
-
-		.bee-row-33 .bee-col-3 .bee-block-2 {
-			padding: 10px 30px 5px;
-			text-align: left
-		}
-
-		.bee-row-35 .bee-row-content {
-			color: #000000
-		}
-
-		.bee-row-35 .bee-col-1 .bee-block-1 {
-			color: #1e0e4b;
-			font-family: Inter, sans-serif;
-			font-size: 15px;
-			padding-bottom: 5px;
-			padding-top: 5px;
-			text-align: center
-		}
-
-		.bee-row-3 .bee-col-1 .bee-block-1 h1 {
-			color: #243931;
-			direction: ltr;
-			font-family: Georgia, Times, Times New Roman, serif;
-			font-size: 49px;
-			font-weight: 400;
-			letter-spacing: normal;
-			line-height: 120%;
-			text-align: left
-		}
-
-		.bee-row-3 .bee-col-1 .bee-block-2 {
-			color: #4b6158;
-			direction: ltr;
-			font-size: 23px;
-			font-weight: 400;
-			letter-spacing: 0;
-			line-height: 150%;
-			text-align: left
-		}
-
-		.bee-row-12 .bee-col-1 .bee-block-3 p:not(:last-child),
-		.bee-row-13 .bee-col-1 .bee-block-1 p:not(:last-child),
-		.bee-row-13 .bee-col-2 .bee-block-1 p:not(:last-child),
-		.bee-row-15 .bee-col-1 .bee-block-3 p:not(:last-child),
-		.bee-row-16 .bee-col-1 .bee-block-3 p:not(:last-child),
-		.bee-row-17 .bee-col-1 .bee-block-3 p:not(:last-child),
-		.bee-row-17 .bee-col-2 .bee-block-3 p:not(:last-child),
-		.bee-row-17 .bee-col-3 .bee-block-3 p:not(:last-child),
-		.bee-row-17 .bee-col-4 .bee-block-3 p:not(:last-child),
-		.bee-row-21 .bee-col-2 .bee-block-2 p:not(:last-child),
-		.bee-row-25 .bee-col-1 .bee-block-1 p:not(:last-child),
-		.bee-row-25 .bee-col-2 .bee-block-1 p:not(:last-child),
-		.bee-row-25 .bee-col-3 .bee-block-1 p:not(:last-child),
-		.bee-row-3 .bee-col-1 .bee-block-2 p:not(:last-child),
-		.bee-row-33 .bee-col-2 .bee-block-1 p:not(:last-child),
-		.bee-row-33 .bee-col-2 .bee-block-2 p:not(:last-child),
-		.bee-row-33 .bee-col-2 .bee-block-3 p:not(:last-child),
-		.bee-row-33 .bee-col-3 .bee-block-3 p:not(:last-child),
-		.bee-row-33 .bee-col-4 .bee-block-1 p:not(:last-child),
-		.bee-row-33 .bee-col-4 .bee-block-2 p:not(:last-child),
-		.bee-row-6 .bee-col-1 .bee-block-2 p:not(:last-child),
-		.bee-row-7 .bee-col-1 .bee-block-3 p:not(:last-child),
-		.bee-row-7 .bee-col-2 .bee-block-3 p:not(:last-child),
-		.bee-row-9 .bee-col-1 .bee-block-3 p:not(:last-child),
-		.bee-row-9 .bee-col-2 .bee-block-3 p:not(:last-child) {
-			margin-bottom: 16px
-		}
-
-		.bee-row-21 .bee-col-2 .bee-block-4 a,
-		.bee-row-3 .bee-col-1 .bee-block-3 a {
-			background-color: #243931;
-			border-radius: 30px;
-			color: #ffffff;
-			direction: ltr;
-			font-family: inherit;
-			font-size: 16px;
-			font-weight: 700;
-			letter-spacing: 0;
-			line-height: 200%;
-			padding: 15px 50px;
-			width: auto
-		}
-
-		.bee-row-2 .bee-col-1 .bee-block-1 li {
-			padding: 15px 25px 20px 60px
-		}
-
-		.bee-row-2 .bee-col-1 .bee-block-1 li a {
-			color: #101112
-		}
-
-		.bee-row-16 .bee-col-1 .bee-block-2 h2,
-		.bee-row-6 .bee-col-1 .bee-block-1 h2 {
-			color: #ffffff;
-			direction: ltr;
-			font-family: Georgia, Times, Times New Roman, serif;
-			font-size: 37px;
-			font-weight: 400;
-			letter-spacing: normal;
-			line-height: 120%;
-			text-align: center
-		}
-
-		.bee-row-7 .bee-col-1 .bee-block-2 h3,
-		.bee-row-7 .bee-col-2 .bee-block-2 h3,
-		.bee-row-9 .bee-col-1 .bee-block-2 h3,
-		.bee-row-9 .bee-col-2 .bee-block-2 h3 {
-			color: #ffffff;
-			direction: ltr;
-			font-family: Georgia, Times, Times New Roman, serif;
-			font-size: 25px;
-			font-weight: 400;
-			letter-spacing: normal;
-			line-height: 120%;
-			text-align: center
-		}
-
-		.bee-row-12 .bee-col-1 .bee-block-2 h2,
-		.bee-row-15 .bee-col-1 .bee-block-2 h2 {
-			font-size: 37px;
-			font-family: Georgia, Times, Times New Roman, serif;
-			letter-spacing: normal;
-			direction: ltr;
-			font-weight: 400
-		}
-
-		.bee-row-17 .bee-col-1 .bee-block-1 .bee-icon-image,
-		.bee-row-17 .bee-col-2 .bee-block-1 .bee-icon-image,
-		.bee-row-17 .bee-col-3 .bee-block-1 .bee-icon-image,
-		.bee-row-17 .bee-col-4 .bee-block-1 .bee-icon-image,
-		.bee-row-7 .bee-col-1 .bee-block-1 .bee-icon-image,
-		.bee-row-7 .bee-col-2 .bee-block-1 .bee-icon-image,
-		.bee-row-9 .bee-col-1 .bee-block-1 .bee-icon-image,
-		.bee-row-9 .bee-col-2 .bee-block-1 .bee-icon-image {
-			padding: 5px
-		}
-
-		.bee-row-17 .bee-col-1 .bee-block-1 .bee-icon:not(.bee-icon-first) .bee-content,
-		.bee-row-17 .bee-col-2 .bee-block-1 .bee-icon:not(.bee-icon-first) .bee-content,
-		.bee-row-17 .bee-col-3 .bee-block-1 .bee-icon:not(.bee-icon-first) .bee-content,
-		.bee-row-17 .bee-col-4 .bee-block-1 .bee-icon:not(.bee-icon-first) .bee-content,
-		.bee-row-29 .bee-col-1 .bee-block-3 .bee-icon:not(.bee-icon-first) .bee-content,
-		.bee-row-30 .bee-col-1 .bee-block-2 .bee-icon:not(.bee-icon-first) .bee-content,
-		.bee-row-30 .bee-col-1 .bee-block-5 .bee-icon:not(.bee-icon-first) .bee-content,
-		.bee-row-30 .bee-col-1 .bee-block-8 .bee-icon:not(.bee-icon-first) .bee-content,
-		.bee-row-35 .bee-col-1 .bee-block-1 .bee-icon:not(.bee-icon-first) .bee-content,
-		.bee-row-7 .bee-col-1 .bee-block-1 .bee-icon:not(.bee-icon-first) .bee-content,
-		.bee-row-7 .bee-col-2 .bee-block-1 .bee-icon:not(.bee-icon-first) .bee-content,
-		.bee-row-9 .bee-col-1 .bee-block-1 .bee-icon:not(.bee-icon-first) .bee-content,
-		.bee-row-9 .bee-col-2 .bee-block-1 .bee-icon:not(.bee-icon-first) .bee-content {
-			margin-left: 0
-		}
-
-		.bee-row-7 .bee-col-1 .bee-block-1 .bee-icon::not(.bee-icon-last) .bee-content {
-			margin-right: 0
-		}
-
-		.bee-row-15 .bee-col-1 .bee-block-3 a,
-		.bee-row-17 .bee-col-1 .bee-block-1 .bee-icon-label a,
-		.bee-row-17 .bee-col-2 .bee-block-1 .bee-icon-label a,
-		.bee-row-17 .bee-col-3 .bee-block-1 .bee-icon-label a,
-		.bee-row-17 .bee-col-4 .bee-block-1 .bee-icon-label a,
-		.bee-row-33 .bee-col-2 .bee-block-2 a,
-		.bee-row-33 .bee-col-2 .bee-block-3 a,
-		.bee-row-7 .bee-col-1 .bee-block-1 .bee-icon-label a,
-		.bee-row-7 .bee-col-2 .bee-block-1 .bee-icon-label a,
-		.bee-row-9 .bee-col-1 .bee-block-1 .bee-icon-label a,
-		.bee-row-9 .bee-col-2 .bee-block-1 .bee-icon-label a {
-			color: #000000
-		}
-
-		.bee-row-17 .bee-col-1 .bee-block-3,
-		.bee-row-17 .bee-col-2 .bee-block-3,
-		.bee-row-17 .bee-col-3 .bee-block-3,
-		.bee-row-17 .bee-col-4 .bee-block-3,
-		.bee-row-7 .bee-col-1 .bee-block-3,
-		.bee-row-7 .bee-col-2 .bee-block-3,
-		.bee-row-9 .bee-col-1 .bee-block-3,
-		.bee-row-9 .bee-col-2 .bee-block-3 {
-			color: #ffffff;
-			direction: ltr;
-			font-size: 19px;
-			font-weight: 400;
-			letter-spacing: 0;
-			line-height: 150%;
-			text-align: center
-		}
-
-		.bee-row-16 .bee-col-1 .bee-block-3,
-		.bee-row-6 .bee-col-1 .bee-block-2 {
-			color: #ffffff;
-			direction: ltr;
-			font-size: 21px;
-			font-weight: 400;
-			letter-spacing: 0;
-			line-height: 150%;
-			text-align: center
-		}
-
-		.bee-row-12 .bee-col-1 .bee-block-3 a,
-		.bee-row-13 .bee-col-1 .bee-block-1 a,
-		.bee-row-13 .bee-col-1 .bee-block-2 li a,
-		.bee-row-13 .bee-col-2 .bee-block-1 a,
-		.bee-row-13 .bee-col-2 .bee-block-2 li a,
-		.bee-row-16 .bee-col-1 .bee-block-3 a,
-		.bee-row-25 .bee-col-1 .bee-block-1 a,
-		.bee-row-25 .bee-col-2 .bee-block-1 a,
-		.bee-row-25 .bee-col-3 .bee-block-1 a,
-		.bee-row-33 .bee-col-2 .bee-block-1 a,
-		.bee-row-33 .bee-col-3 .bee-block-3 a,
-		.bee-row-33 .bee-col-4 .bee-block-1 a,
-		.bee-row-33 .bee-col-4 .bee-block-2 a,
-		.bee-row-6 .bee-col-1 .bee-block-2 a {
-			color: #7747FF
-		}
-
-		.bee-row-7 .bee-col-2 .bee-block-1 .bee-icon::not(.bee-icon-last) .bee-content {
-			margin-right: 0
-		}
-
-		.bee-row-9 .bee-col-1 .bee-block-1 .bee-icon::not(.bee-icon-last) .bee-content {
-			margin-right: 0
-		}
-
-		.bee-row-9 .bee-col-2 .bee-block-1 .bee-icon::not(.bee-icon-last) .bee-content {
-			margin-right: 0
-		}
-
-		.bee-row-12 .bee-col-1 .bee-block-3 {
-			color: #101112;
-			direction: ltr;
-			font-size: 21px;
-			font-weight: 400;
-			letter-spacing: 0;
-			line-height: 150%;
-			text-align: center
-		}
-
-		.bee-row-12 .bee-col-1 .bee-block-2 h2 {
-			color: #243931;
-			line-height: 120%;
-			text-align: center
-		}
-
-		.bee-row-13 .bee-col-1 .bee-block-1,
-		.bee-row-13 .bee-col-1 .bee-block-2,
-		.bee-row-13 .bee-col-2 .bee-block-1,
-		.bee-row-13 .bee-col-2 .bee-block-2 {
-			color: #101112;
-			direction: ltr;
-			font-size: 19px;
-			font-weight: 400;
-			letter-spacing: 0;
-			line-height: 120%;
-			text-align: left
-		}
-
-		.bee-row-13 .bee-col-1 .bee-block-2 ul,
-		.bee-row-13 .bee-col-2 .bee-block-2 ul {
-			list-style-type: revert;
-			list-style-position: inside
-		}
-
-		.bee-row-13 .bee-col-1 .bee-block-2 li:not(:last-child),
-		.bee-row-13 .bee-col-2 .bee-block-2 li:not(:last-child) {
-			margin-bottom: 10px
-		}
-
-		.bee-row-13 .bee-col-1 .bee-block-2 li ul,
-		.bee-row-13 .bee-col-2 .bee-block-2 li ul {
-			margin-top: 10px
-		}
-
-		.bee-row-13 .bee-col-1 .bee-block-2 li li,
-		.bee-row-13 .bee-col-2 .bee-block-2 li li {
-			margin-left: 30px
-		}
-
-		.bee-row-15 .bee-col-1 .bee-block-2 h2 {
-			color: #000000;
-			line-height: 120%;
-			text-align: center
-		}
-
-		.bee-row-15 .bee-col-1 .bee-block-3 {
-			color: #000000;
-			direction: ltr;
-			font-size: 21px;
-			font-weight: 400;
-			letter-spacing: 0;
-			line-height: 150%;
-			text-align: center
-		}
-
-		.bee-row-16 .bee-col-1 .bee-block-5 h2,
-		.bee-row-24 .bee-col-1 .bee-block-3 h2 {
-			color: #ffffff;
-			direction: ltr;
-			font-family: Georgia, Times, Times New Roman, serif;
-			font-size: 32px;
-			font-weight: 400;
-			letter-spacing: normal;
-			line-height: 120%;
-			text-align: center
-		}
-
-		.bee-row-17 .bee-col-1 .bee-block-2 h3,
-		.bee-row-17 .bee-col-2 .bee-block-2 h3,
-		.bee-row-17 .bee-col-3 .bee-block-2 h3,
-		.bee-row-17 .bee-col-4 .bee-block-2 h3 {
-			color: #ffffff;
-			direction: ltr;
-			font-family: Georgia, Times, Times New Roman, serif;
-			font-size: 24px;
-			font-weight: 400;
-			letter-spacing: normal;
-			line-height: 120%;
-			text-align: center
-		}
-
-		.bee-row-17 .bee-col-1 .bee-block-1 .bee-icon::not(.bee-icon-last) .bee-content {
-			margin-right: 0
-		}
-
-		.bee-row-17 .bee-col-2 .bee-block-1 .bee-icon::not(.bee-icon-last) .bee-content {
-			margin-right: 0
-		}
-
-		.bee-row-17 .bee-col-3 .bee-block-1 .bee-icon::not(.bee-icon-last) .bee-content {
-			margin-right: 0
-		}
-
-		.bee-row-17 .bee-col-4 .bee-block-1 .bee-icon::not(.bee-icon-last) .bee-content {
-			margin-right: 0
-		}
-
-		.bee-row-21 .bee-col-2 .bee-block-1 h2 {
-			color: #243931;
-			direction: ltr;
-			font-family: Georgia, Times, Times New Roman, serif;
-			font-size: 37px;
-			font-weight: 400;
-			letter-spacing: normal;
-			line-height: 120%;
-			text-align: left
-		}
-
-		.bee-row-21 .bee-col-2 .bee-block-2 {
-			color: #243931;
-			direction: ltr;
-			font-size: 19px;
-			font-weight: 400;
-			letter-spacing: 2px;
-			line-height: 150%;
-			text-align: left
-		}
-
-		.bee-row-25 .bee-col-1 .bee-block-1,
-		.bee-row-25 .bee-col-2 .bee-block-1,
-		.bee-row-25 .bee-col-3 .bee-block-1 {
-			color: #ffffff;
-			direction: ltr;
-			font-size: 19px;
-			font-weight: 400;
-			letter-spacing: 0;
-			line-height: 120%;
-			text-align: center
-		}
-
-		.bee-row-21 .bee-col-2 .bee-block-3 {
-			color: #4b6158;
-			direction: ltr;
-			font-size: 19px;
-			font-weight: 400;
-			letter-spacing: 0;
-			line-height: 150%;
-			text-align: left
-		}
-
-		.bee-row-21 .bee-col-2 .bee-block-3 p:not(:last-child),
-		.bee-row-29 .bee-col-1 .bee-block-4 p:not(:last-child),
-		.bee-row-30 .bee-col-1 .bee-block-3 p:not(:last-child),
-		.bee-row-30 .bee-col-1 .bee-block-6 p:not(:last-child),
-		.bee-row-30 .bee-col-1 .bee-block-9 p:not(:last-child) {
-			margin-bottom: 17px
-		}
-
-		.bee-row-29 .bee-col-1 .bee-block-2 h2 {
-			color: #243931;
-			direction: ltr;
-			font-family: Georgia, Times, Times New Roman, serif;
-			font-size: 32px;
-			font-weight: 400;
-			letter-spacing: normal;
-			line-height: 120%;
-			text-align: center
-		}
-
-		.bee-row-29 .bee-col-1 .bee-block-4,
-		.bee-row-30 .bee-col-1 .bee-block-3,
-		.bee-row-30 .bee-col-1 .bee-block-6,
-		.bee-row-30 .bee-col-1 .bee-block-9 {
-			color: #4b6158;
-			direction: ltr;
-			font-size: 18px;
-			font-weight: 400;
-			letter-spacing: 0;
-			line-height: 150%;
-			text-align: left
-		}
-
-		.bee-row-29 .bee-col-1 .bee-block-3 .bee-icon-image,
-		.bee-row-30 .bee-col-1 .bee-block-2 .bee-icon-image,
-		.bee-row-30 .bee-col-1 .bee-block-5 .bee-icon-image,
-		.bee-row-30 .bee-col-1 .bee-block-8 .bee-icon-image {
-			padding: 0 25px 0 0
-		}
-
-		.bee-row-29 .bee-col-1 .bee-block-3 .bee-icon::not(.bee-icon-last) .bee-content {
-			margin-right: 0
-		}
-
-		.bee-row-29 .bee-col-1 .bee-block-3 .bee-icon-label a,
-		.bee-row-30 .bee-col-1 .bee-block-2 .bee-icon-label a,
-		.bee-row-30 .bee-col-1 .bee-block-5 .bee-icon-label a,
-		.bee-row-30 .bee-col-1 .bee-block-8 .bee-icon-label a {
-			color: #243931
-		}
-
-		.bee-row-30 .bee-col-1 .bee-block-2 .bee-icon::not(.bee-icon-last) .bee-content {
-			margin-right: 0
-		}
-
-		.bee-row-30 .bee-col-1 .bee-block-8 .bee-icon::not(.bee-icon-last) .bee-content {
-			margin-right: 0
-		}
-
-		.bee-row-30 .bee-col-1 .bee-block-5 .bee-icon::not(.bee-icon-last) .bee-content {
-			margin-right: 0
-		}
-
-		.bee-row-33 .bee-col-2 .bee-block-1,
-		.bee-row-33 .bee-col-3 .bee-block-3,
-		.bee-row-33 .bee-col-4 .bee-block-1 {
-			color: #101112;
-			direction: ltr;
-			font-size: 16px;
-			font-weight: 400;
-			letter-spacing: 0;
-			line-height: 120%;
-			text-align: left
-		}
-
-		.bee-row-33 .bee-col-2 .bee-block-2,
-		.bee-row-33 .bee-col-2 .bee-block-3 {
-			color: #000000;
-			direction: ltr;
-			font-size: 16px;
-			font-weight: 400;
-			letter-spacing: 0;
-			line-height: 120%;
-			text-align: left
-		}
-
-		.bee-row-33 .bee-col-3 .bee-block-1 h3 {
-			color: #aab49b;
-			direction: ltr;
-			font-family: Georgia, Times, Times New Roman, serif;
-			font-size: 20px;
-			font-weight: 400;
-			letter-spacing: normal;
-			line-height: 120%;
-			text-align: left
-		}
-
-		.bee-row-35 .bee-col-1 .bee-block-1 .bee-icon-image {
-			padding: 5px 6px 5px 5px
-		}
-
-		.bee-row-35 .bee-col-1 .bee-block-1 .bee-icon::not(.bee-icon-last) .bee-content {
-			margin-right: 0
-		}
-
-		.bee-row-35 .bee-col-1 .bee-block-1 .bee-icon-label a {
-			color: #1e0e4b
-		}
-
-		.bee-row-33 .bee-col-4 .bee-block-2 {
-			color: #000000;
-			direction: ltr;
-			font-size: 16px;
-			font-weight: 400;
-			letter-spacing: 0;
-			line-height: 150%;
-			text-align: left
-		}
-
-		@media (max-width:768px) {
-			.bee-row-content:not(.no_stack) {
-				display: block
-			}
-
-			.bee-row-12 .bee-col-1,
-			.bee-row-3 .bee-col-1 {
-				padding: 5px 20px !important
-			}
-
-			.bee-row-3 .bee-col-1 .bee-block-1,
-			.bee-row-33 .bee-col-3 .bee-block-1,
-			.bee-row-33 .bee-col-3 .bee-block-1 h3 {
-				text-align: center
-			}
-
-			.bee-row-3 .bee-col-1 .bee-block-1 h1 {
-				font-size: 40px;
-				text-align: center
-			}
-
-			.bee-row-3 .bee-col-1 .bee-block-2,
-			.bee-row-3 .bee-col-1 .bee-block-3,
-			.bee-row-3 .bee-col-1 .bee-block-3 .bee-button-content,
-			.bee-row-33 .bee-col-2 .bee-block-2,
-			.bee-row-33 .bee-col-2 .bee-block-3,
-			.bee-row-33 .bee-col-3 .bee-block-2,
-			.bee-row-33 .bee-col-4 .bee-block-2 {
-				text-align: center !important
-			}
-
-			.bee-row-29 .bee-col-1 .bee-block-3,
-			.bee-row-3 .bee-col-2 .bee-block-1,
-			.bee-row-30 .bee-col-1 .bee-block-2,
-			.bee-row-30 .bee-col-1 .bee-block-5,
-			.bee-row-30 .bee-col-1 .bee-block-8 {
-				padding: 0 20px !important
-			}
-
-			.bee-row-3 .bee-col-2 .bee-block-1 img,
-			.bee-row-33 .bee-col-1 .bee-block-1 img {
-				float: none !important;
-				margin: 0 auto !important
-			}
-
-			.bee-row-12 .bee-col-1 .bee-block-2,
-			.bee-row-15 .bee-col-1 .bee-block-2,
-			.bee-row-16 .bee-col-1 .bee-block-2,
-			.bee-row-16 .bee-col-1 .bee-block-5,
-			.bee-row-24 .bee-col-1 .bee-block-3,
-			.bee-row-6 .bee-col-1 .bee-block-1 {
-				padding: 10px 20px
-			}
-
-			.bee-row-17 .bee-col-1 .bee-block-3,
-			.bee-row-17 .bee-col-2 .bee-block-3,
-			.bee-row-17 .bee-col-3 .bee-block-3,
-			.bee-row-17 .bee-col-4 .bee-block-3,
-			.bee-row-7 .bee-col-1 .bee-block-3,
-			.bee-row-7 .bee-col-2 .bee-block-3,
-			.bee-row-9 .bee-col-1 .bee-block-3,
-			.bee-row-9 .bee-col-2 .bee-block-3 {
-				padding: 10px 20px !important
-			}
-
-			.bee-row-29 .bee-col-1 .bee-block-2 {
-				padding: 10px 20px 30px
-			}
-
-			.bee-row-29 .bee-col-1 .bee-block-4,
-			.bee-row-30 .bee-col-1 .bee-block-3,
-			.bee-row-30 .bee-col-1 .bee-block-6,
-			.bee-row-30 .bee-col-1 .bee-block-9 {
-				padding: 15px 20px 10px !important
-			}
-		}
-	</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ginkgo Languages & Consulting</title>
+    <meta name="description" content="Ginkgo tarjoaa kielikoulutuksia, kulttuurivalmennusta ja konsultaatio-palveluita Suomesta ja Kiinasta kiinnostuneille">
+    <meta property="og:title" content="Ginkgo Languages & Consulting">
+    <meta property="og:description" content="Kielikoulutuksia, kulttuurivalmennusta ja konsultaatio-palveluita">
+    <meta property="og:type" content="website">
+    
+    <style>
+        /* CSS Variables for consistent styling */
+        :root {
+            --primary-dark: #243931;
+            --primary-green: #2A7D67;
+            --light-green: #dff2e7;
+            --light-gray: #aab49b;
+            --text-gray: #4b6158;
+            --text-dark: #101112;
+            --purple-accent: #7747FF;
+            --max-width: 1245px;
+            --content-padding: 60px;
+            --mobile-padding: 20px;
+            --section-radius: 30px;
+            --section-spacing: 60px;
+        }
+
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 100px;
+        }
+
+        body {
+            font-family: Georgia, Times, 'Times New Roman', serif;
+            color: var(--text-dark);
+            background-color: #ffffff;
+            line-height: 1.6;
+        }
+
+        /* Typography */
+        h1, h2, h3 {
+            font-weight: 400;
+            line-height: 1.2;
+        }
+
+        h1 {
+            font-size: 49px;
+            color: var(--primary-dark);
+        }
+
+        h2 {
+            font-size: 37px;
+        }
+
+        h3 {
+            font-size: 25px;
+        }
+
+        p {
+            margin-bottom: 16px;
+        }
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        em {
+            font-style: italic;
+        }
+
+        /* Utility classes */
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 var(--content-padding);
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .text-white {
+            color: #ffffff;
+        }
+
+        .bg-dark {
+            background-color: var(--primary-dark);
+        }
+
+        .bg-light-green {
+            background-color: var(--light-green);
+        }
+
+        .rounded-top {
+            border-radius: var(--section-radius) var(--section-radius) 0 0;
+        }
+
+        .rounded-bottom {
+            border-radius: 0 0 var(--section-radius) var(--section-radius);
+        }
+
+        /* Navigation */
+        .navbar {
+            background-color: #ffffff;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            margin-bottom: 3rem;
+        }
+
+        .navbar .container {
+            display: flex;
+            align-items: center;
+            padding: 0.75rem var(--content-padding);
+        }
+
+        .logo-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .logo-img {
+            height: 80px;
+            width: auto;
+        }
+
+        .logo-text {
+            font-size: 1.85rem;
+            color: var(--primary-dark);
+            font-weight: 500;
+            line-height: 1.1;
+            transition: transform 0.3s;
+        }
+
+        .logo-text:hover {
+            transform: scale(1.05);
+        }
+
+        .nav-menu {
+            list-style: none;
+            display: flex;
+            margin-left: 2rem;
+            gap: 1.5rem;
+        }
+
+        .nav-menu a {
+            font-size: 1.3rem;
+            font-weight: 500;
+            padding: 0.5rem;
+            border-radius: 4px;
+            letter-spacing: 0.08rem;
+            position: relative;
+            transition: color 0.25s ease, transform 0.25s ease;
+        }
+
+        .nav-menu a::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary-green);
+            transition: width 0.3s;
+        }
+
+        .nav-menu a:hover {
+            color: var(--primary-green);
+            transform: scale(1.05);
+        }
+
+        .nav-menu a:hover::after {
+            width: 100%;
+        }
+
+        .menu-toggle {
+            display: none;
+            cursor: pointer;
+            font-size: 1.5rem;
+            margin-left: auto;
+        }
+
+        .home-link {
+            display: none;
+        }
+
+        /* Sections */
+        section {
+            padding: var(--section-spacing) 0;
+        }
+
+        .hero {
+            padding-top: 0;
+        }
+
+        .hero .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .hero-content h1 {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        .hero-content p {
+            font-size: 23px;
+            color: var(--text-gray);
+            margin-bottom: 30px;
+        }
+
+        .hero-image img {
+            width: 100%;
+            max-width: 622px;
+            border-radius: 25px;
+            margin-left: auto;
+            display: block;
+        }
+
+        /* Buttons */
+        .button {
+            display: inline-block;
+            background-color: var(--primary-dark);
+            color: #ffffff;
+            padding: 15px 50px;
+            border-radius: 30px;
+            font-size: 16px;
+            font-weight: 700;
+            transition: transform 0.3s;
+        }
+
+        .button:hover {
+            transform: translateY(-2px);
+        }
+
+        /* Service sections */
+        .services {
+            background-color: var(--primary-dark);
+            color: #ffffff;
+        }
+
+        .services h2 {
+            margin-bottom: 40px;
+        }
+
+        .services-intro {
+            max-width: 900px;
+            margin: 0 auto 60px;
+            font-size: 21px;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .service-item {
+            padding: 0 30px;
+        }
+
+        .service-icon {
+            width: 32px;
+            height: 32px;
+            margin-bottom: 20px;
+        }
+
+        .service-item h3 {
+            margin-bottom: 20px;
+        }
+
+        .service-item p {
+            font-size: 19px;
+            line-height: 1.5;
+        }
+
+        /* Divider */
+        .divider {
+            width: 5%;
+            height: 5px;
+            background-color: var(--light-gray);
+            margin: 0 auto;
+        }
+
+        /* Logo separator */
+        .logo-separator {
+            text-align: center;
+            padding-top: 40px;
+            padding-bottom: 5px;
+        }
+
+        .logo-separator img {
+            width: 187px;
+            height: auto;
+        }
+
+        /* Example packages */
+        .packages-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            margin-top: 40px;
+        }
+
+        .package h4 {
+            font-size: 19px;
+            margin-bottom: 10px;
+        }
+
+        .package ul {
+            list-style-position: inside;
+            font-size: 19px;
+            line-height: 1.6;
+        }
+
+        .package li {
+            margin-bottom: 10px;
+        }
+
+        /* About section */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            padding: 40px 0;
+        }
+
+        .about-image img {
+            width: 100%;
+            max-width: 374px;
+            border-radius: 30px;
+        }
+
+        .about-content h2 {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .about-content .name {
+            font-size: 19px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+        }
+
+        .about-content p {
+            font-size: 19px;
+            color: var(--text-gray);
+            margin-bottom: 30px;
+        }
+
+        /* Features grid */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .feature {
+            text-align: center;
+            padding: 0 15px;
+        }
+
+        .feature-icon {
+            width: 32px;
+            height: 32px;
+            margin: 0 auto 20px;
+        }
+
+        .feature h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .feature p {
+            font-size: 19px;
+        }
+
+        /* Testimonials */
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .testimonial {
+            padding: 0 20px;
+            font-size: 19px;
+            text-align: center;
+        }
+
+        .testimonial strong {
+            display: block;
+            margin-top: 10px;
+        }
+
+        /* FAQ */
+        .faq-item {
+            margin-bottom: 20px;
+        }
+
+        .faq-question {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            font-size: 20px;
+            color: var(--primary-dark);
+            margin-bottom: 15px;
+        }
+
+        .faq-icon {
+            width: 32px;
+            height: 32px;
+            flex-shrink: 0;
+        }
+
+        .faq-answer {
+            font-size: 18px;
+            color: var(--text-gray);
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        /* Footer */
+        footer {
+            padding: 40px 0;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            align-items: center;
+        }
+
+        .footer-logo img {
+            width: 156px;
+        }
+        .footer-logo {
+            align-self: center;
+        }
+
+        .footer-col a {
+            color: var(--text-dark);
+            display: block;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        .social-link img {
+            width: 32px;
+            height: 32px;
+        }
+
+        .copyright {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        /* Mobile styles */
+        @media (max-width: 1235px) {
+            .container {
+                padding: 0 var(--mobile-padding);
+            }
+
+            h1 {
+                font-size: 40px;
+                text-align: center;
+            }
+
+            /* Mobile navigation */
+            .navbar .container {
+                position: relative;
+                display: block;
+                text-align: center;
+                padding: 0.75rem 1rem;
+            }
+
+            .logo-img {
+                display: none;
+            }
+
+            .menu-toggle {
+                display: block;
+                position: absolute;
+                right: 1rem;
+                top: 0.75rem;
+            }
+
+            .nav-menu {
+                display: none;
+                flex-direction: column;
+                margin: 1rem 0 0 0;
+                text-align: right;
+                padding-right: 3rem;
+            }
+
+            .nav-menu.open {
+                display: flex;
+            }
+
+            .home-link {
+                display: list-item;
+            }
+
+            .navbar.open-menu .logo-text {
+                display: none;
+            }
+
+            /* Mobile layouts */
+            .hero .container,
+            .services-grid,
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-content {
+                text-align: center;
+            }
+
+            .hero-content h1 {
+                text-align: center;
+            }
+
+            .hero-image img {
+                margin: 0 auto;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 20px;
+            }
+
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .footer-col {
+                text-align: center;
+            }
+
+            .packages-grid {
+                align-items: center;
+            }
+            /* Allow example packages to stay side-by-side until narrower */
+            .packages-grid {
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 30px;
+            }
+
+            .package {
+                max-width: 500px;
+                margin: 0 auto;
+            }
+            @media (max-width: 1235px) {
+  /* 1) Center the navbar title */
+  /* right after your `.navbar .container { … }` rules */
+  .logo-wrapper {
+    justify-content: center;
+  }
+
+  /* 2) Stack the features in one column, so nothing overflows */
+  /* replace your existing two-column rule */
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 20px; /* preserve your mobile gap */
+  }
+}
+        }
+        .packages-grid .package > p {
+            font-size: 1.3rem;
+        }
+
+        /* Reduce gap below logo separator */
+        #esimerkkipaketit {
+            padding-top: 30px;
+        }
+    </style>
 </head>
-
 <body>
-	<div class="bee-page-container">
-		<div class="bee-row bee-row-1">
-			<div class="bee-row-content">
-				<div class="bee-col bee-col-1 bee-col-w12">
-					<div class="bee-block bee-block-1 bee-spacer">
-						<div class="spacer" style="height:30px;"></div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="bee-row bee-row-2">
-			<div class="bee-row-content">
-				<div class="bee-col bee-col-1 bee-col-w12">
-					<div class="bee-block bee-block-1 bee-menu">
-						<nav class="bee-menu">
-							<ul class="bee-horizontal">
-								<li><a href="#" target="_self" title="">Ginkgo Languages &amp; Consulting</a></li>
-								<li><a href="#yrityksille" target="_self" title="">Yrityksille</a></li>
-								<li><a href="#esimerkkipaketit" target="_self" title="">Esimerkkipaketit</a></li>
-								<li><a href="#yksityisille" target="_self" title="">Yksityishenkilöille</a></li>
-								<li><a href="#tietoa" target="_self" title="">Tietoa</a></li>
-							</ul>
-						</nav>
-					</div>
-					<div class="bee-block bee-block-2 bee-spacer">
-						<div class="spacer" style="height:30px;"></div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="bee-row bee-row-3">
-			<div class="bee-row-content">
-				<div class="bee-col bee-col-1 bee-col-w6">
-					<div class="bee-block bee-block-1 bee-heading">
-						<h1><em><span class="tinyMce-placeholder">Ginkgo Languages &amp; Consulting</span></em> </h1>
-					</div>
-					<div class="bee-block bee-block-2 bee-paragraph">
-						<p>Ginkgo tarjoaa kielikoulutuksia, kulttuurivalmennusta ja konsultaatio-palveluita Suomesta ja Kiinasta kiinnostuneille yksityishenkilöille ja organisaatioille.</p>
-						<p> </p>
-					</div>
-					<div class="bee-block bee-block-3 bee-button"><a class="bee-button-content" href="mailto:info@ginkgo.fi" style="font-size: 16px; display: inline-block;" target="_blank"><span style="word-break: break-word; font-size: 16px; line-height: 200%; letter-spacing: normal;">Ota yhteyttä</span></a></div>
-				</div>
-				<div class="bee-col bee-col-2 bee-col-w6">
-					<div class="bee-block bee-block-1 bee-image"><img alt="Students" class="bee-center bee-fixedwidth" src="assets/2_Ginkgo.png" style="max-width:622px;border-radius:25px;" /></div>
-				</div>
-			</div>
-		</div>
-		<div class="bee-row bee-row-4">
-			<div class="bee-row-content">
-				<div class="bee-col bee-col-1 bee-col-w12">
-					<div class="bee-block bee-block-1 bee-spacer">
-						<div class="spacer" style="height:60px;"></div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="bee-row bee-row-5">
-			<div class="bee-row-content">
-				<div class="bee-col bee-col-1 bee-col-w12">
-					<div class="bee-block bee-block-1 bee-spacer">
-						<div class="spacer" style="height:60px;"></div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="bee-row bee-row-6">
-			<div class="bee-row-content">
-				<div class="bee-col bee-col-1 bee-col-w12">
-					<div class="bee-block bee-block-1 bee-heading" id="yrityksille">
-						<h2><span class="tinyMce-placeholder"><em>Palvelut yrityksille</em><br /></span> </h2>
-					</div>
-					<div class="bee-block bee-block-2 bee-paragraph">
-						<p>Räätälöidyt kieli- ja kulttuurikoulutusohjelmamme suunnitellaan palvelemaan organisaatiosi ainutlaatuisia tarpeita. Palvelut toteutetaan joustavalla aikataululla verkossa.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="bee-row bee-row-7">
-			<div class="bee-row-content">
-				<div class="bee-col bee-col-1 bee-col-w6">
-					<div class="bee-block bee-block-1 bee-icons">
-						<div class="bee-icon bee-icon-last">
-							<div class="bee-content">
-								<div class="bee-icon-image"><img alt="a green tick in a square" height="32px" src="assets/3_icon-tick.png" width="auto" /></div>
-							</div>
-						</div>
-					</div>
-					<div class="bee-block bee-block-2 bee-heading">
-						<h3><em>Kielikurssit - suomi, englanti ja kiina</em><br /> </h3>
-					</div>
-					<div class="bee-block bee-block-3 bee-paragraph">
-						<p>Tiimien kielitaito on keskeinen tekijä kulttuurien välisessä viestinnässä ja onnistuneen kansainvälisen yhteistyön edistämisessä. Ginkgo tarjoaa kielikursseja, jotka on räätälöity henkilöstön osaamisen ja asiakkaan ainutlaatuisen tilanteen ja tarpeiden mukaan.</p>
-					</div>
-				</div>
-				<div class="bee-col bee-col-2 bee-col-w6">
-					<div class="bee-block bee-block-1 bee-icons">
-						<div class="bee-icon bee-icon-last">
-							<div class="bee-content">
-								<div class="bee-icon-image"><img alt="a green tick in a square" height="32px" src="assets/3_icon-tick.png" width="auto" /></div>
-							</div>
-						</div>
-					</div>
-					<div class="bee-block bee-block-2 bee-heading">
-						<h3><em>Kulttuurivalmennukset</em><br /> </h3>
-					</div>
-					<div class="bee-block bee-block-3 bee-paragraph">
-						<p>Uusissa kulttuuriympäristöissä toimiminen voi olla haasteellista. Tarjoamme koulutusta paikalliseen tapakulttuuriin ja yrityskulttuuriin liittyen. Paketteihin voidaan sisällyttää myös kielitunteja ja konsultaatiopalveluita.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="bee-row bee-row-8">
-			<div class="bee-row-content">
-				<div class="bee-col bee-col-1 bee-col-w12">
-					<div class="bee-block bee-block-1 bee-spacer">
-						<div class="spacer" style="height:20px;"></div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="bee-row bee-row-9">
-			<div class="bee-row-content">
-				<div class="bee-col bee-col-1 bee-col-w6">
-					<div class="bee-block bee-block-1 bee-icons">
-						<div class="bee-icon bee-icon-last">
-							<div class="bee-content">
-								<div class="bee-icon-image"><img alt="a green tick in a square" height="32px" src="assets/3_icon-tick.png" width="auto" /></div>
-							</div>
-						</div>
-					</div>
-					<div class="bee-block bee-block-2 bee-heading">
-						<h3><em>Markkinointi- ja viestintästrategian kehittäminen (Kiina)</em><br /> </h3>
-					</div>
-					<div class="bee-block bee-block-3 bee-paragraph">
-						<p>Autamme suomalaisyrityksiä onnistumaan Kiinan digikanavissa. Tarjoamme selkeän katsauksen kiinalaisen sosiaalisen median ekosysteemiin, räätälöidyn markkinointistrategian, sekä tukea kohderyhmien tavoittamiseen ja mainonnan kohdentamiseen.</p>
-						<p> </p>
-						<p> </p>
-					</div>
-				</div>
-				<div class="bee-col bee-col-2 bee-col-w6">
-					<div class="bee-block bee-block-1 bee-icons">
-						<div class="bee-icon bee-icon-last">
-							<div class="bee-content">
-								<div class="bee-icon-image"><img alt="a green tick in a square" height="32px" src="assets/3_icon-tick.png" width="auto" /></div>
-							</div>
-						</div>
-					</div>
-					<div class="bee-block bee-block-2 bee-heading">
-						<h3><em>Konsultaatio- ja käännöspalvelut</em><br /> </h3>
-					</div>
-					<div class="bee-block bee-block-3 bee-paragraph">
-						<p>Tarjoamme neuvoja ja tukea Suomeen tai Kiinaan matkustamiseen, asettautumiseen ja arjen navigointiin. Meiltä saat myös markkinatutkimuspalveluita ja ajantasaisia toimialakatsauksia. Lisäksi tarjoamme käännöspalveluita (englanti, suomi, kiina). Voimme kääntää yrityksen nimen, nettisivut ja muut tärkeät materiaalit. </p>
-						<p> </p>
-						<p> </p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="bee-row bee-row-10">
-			<div class="bee-row-content">
-				<div class="bee-col bee-col-1 bee-col-w12">
-					<div class="bee-block bee-block-1 bee-spacer">
-						<div class="spacer" style="height:60px;"></div>
-					</div>
-					<div class="bee-block bee-block-2 bee-spacer">
-						<div class="spacer" style="height:20px;"></div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="bee-row bee-row-11">
-			<div class="bee-row-content">
-				<div class="bee-col bee-col-1 bee-col-w12">
-					<div class="bee-block bee-block-1 bee-image"><img alt="" class="bee-center bee-fixedwidth" src="assets/2_Ginkgo.png" style="max-width:187px;" /></div>
-				</div>
-			</div>
-		</div>
-		<div class="bee-row bee-row-12">
-			<div class="bee-row-content">
-				<div class="bee-col bee-col-1 bee-col-w12">
-					<div class="bee-block bee-block-1 bee-divider">
-						<div class="center bee-separator" style="border-top:5px solid #aab49b;width:5%;"></div>
-					</div>
-					<div class="bee-block bee-block-2 bee-heading" id="esimerkkipaketit">
-						<h2><span class="tinyMce-placeholder"><em>Esimerkkipaketit</em><br /></span> </h2>
-					</div>
-					<div class="bee-block bee-block-3 bee-paragraph">
-						<p>Koulutuspaketti luo pohjan onnistuneelle kansainväliselle yhteistyölle. Kielituntien ja kulttuurikoulutusten lähtöhinta on 90 €/tunti. Valmennukset voivat sisältää mm. käytännön harjoituksia, tapausesimerkkejä kiinalaissuomalaisesta yhteistyöstä, työpajoja ja ryhmäkeskusteluja opitun sisäistämiseksi, sekä materiaaleja (PDF-oppaat, sanastot, videot).</p>
-					</div>
-					<div class="bee-block bee-block-4 bee-spacer">
-						<div class="spacer" style="height:30px;"></div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="bee-row bee-row-13">
-			<div class="bee-row-content">
-				<div class="bee-col bee-col-1 bee-col-w6">
-					<div class="bee-block bee-block-1 bee-paragraph">
-						<p><strong>Yleinen kieli- ja kulttuurikoulutus</strong></p>
-						<p><em><strong>Kiina: menestyksen avaimet; 720 € (8h + materiaalit)</strong></em></p>
-					</div>
-					<div class="bee-block bee-block-2 bee-list">
-						<ul start="1">
-							<li>Kiinan kieli ja keskeiset fraasit arjen, työelämän ja neuvottelutilanteiden tueksi.</li>
-							<li>Paikalliset käytännöt arjessa ja yritysmaailmassa: arjen sovellukset ja verkostoituminen.</li>
-							<li>Liiketoimintakulttuuri: kokoukset, neuvottelut ja hierarkia.</li>
-							<li>Kulttuuriset tavat ja käytännöt viestinnässä.</li>
-							<li>Toimialakohtaiset piirteet ja alueelliset erot.</li>
-						</ul>
-					</div>
-				</div>
-				<div class="bee-col bee-col-2 bee-col-w6">
-					<div class="bee-block bee-block-1 bee-paragraph">
-						<p><strong>Koulutus matkailualan yrittäjille</strong></p>
-						<p><em><strong>Kohdenna Kiinaan; 800 € (6h + materiaalit)</strong></em></p>
-					</div>
-					<div class="bee-block bee-block-2 bee-list">
-						<ul start="1">
-							<li>Palveluiden kohdentaminen ja luottamuksen rakentaminen.</li>
-							<li>Hyödyllisiä kiinan kielisiä sanoja ja fraaseja asiakaspalvelutilanteita varten.</li>
-							<li>Kiinalainen sosiaalisen median ekosysteemi.</li>
-							<li>Asiakasryhmät ja markkinoinnin kohdentaminen.</li>
-							<li>Someprofiilien luominen, ohjeet niiden käyttöön sekä räätälöity julkaisusuunnitelma (ml. avainsanat, fraasit ja hashtagit kiinaksi).</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="bee-row bee-row-14">
-			<div class="bee-row-content">
-				<div class="bee-col bee-col-1 bee-col-w12">
-					<div class="bee-block bee-block-1 bee-spacer">
-						<div class="spacer" style="height:60px;"></div>
-					</div>
-					<div class="bee-block bee-block-2 bee-spacer">
-						<div class="spacer" style="height:60px;"></div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="bee-row bee-row-15">
-			<div class="bee-row-content">
-				<div class="bee-col bee-col-1 bee-col-w12">
-					<div class="bee-block bee-block-1 bee-spacer">
-						<div class="spacer" style="height:65px;"></div>
-					</div>
-					<div class="bee-block bee-block-2 bee-heading" id="yksityisille">
-						<h2><span class="tinyMce-placeholder"><em>Palvelut yksityishenkilöille</em><br /></span> </h2>
-					</div>
-					<div class="bee-block bee-block-3 bee-paragraph">
-						<p>Tarjoamme yksityis- ja ryhmätunteja sekä omaan tahtiin suoritettavia verkkokursseja suomen kielen, englannin ja mandariinikiinan opiskelijoille. Lisätietoa tunneista ja kursseista saat sähköpostitse info(a)ginkgo.fi.</p>
-					</div>
-					<div class="bee-block bee-block-4 bee-spacer">
-						<div class="spacer" style="height:60px;"></div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="bee-row bee-row-16">
-			<div class="bee-row-content">
-				<div class="bee-col bee-col-1 bee-col-w12">
-					<div class="bee-block bee-block-1 bee-spacer">
-						<div class="spacer" style="height:60px;"></div>
-					</div>
-					<div class="bee-block bee-block-2 bee-heading" id="tietoa">
-						<h2><em>Ginkgo Languages &amp; Consulting</em><br /> </h2>
-					</div>
-					<div class="bee-block bee-block-3 bee-paragraph">
-						<p>Ginkgo Languages &amp; Consulting on suomalainen vuonna 2024 perustettu yritys. Ginkgo tarjoaa Suomen ja Kiinan kieliin ja kulttuureihin liittyviä asiantuntija-palveluita. Yrityksen nimi tulee kauniista Ginkgo-puusta (suom. neidonhiuspuu), joka edustaa sisukkuutta, sopeutumiskykyä ja viisautta.</p>
-					</div>
-					<div class="bee-block bee-block-4 bee-divider">
-						<div class="center bee-separator" style="border-top:5px solid #aab49b;width:5%;"></div>
-					</div>
-					<div class="bee-block bee-block-5 bee-heading">
-						<h2><em>Syitä valita meidät</em><br /> </h2>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="bee-row bee-row-17">
-			<div class="bee-row-content">
-				<div class="bee-col bee-col-1 bee-col-w3">
-					<div class="bee-block bee-block-1 bee-icons">
-						<div class="bee-icon bee-icon-last">
-							<div class="bee-content">
-								<div class="bee-icon-image"><img alt="" height="32px" src="assets/4_custom-icon-placeholder.png" width="auto" /></div>
-							</div>
-						</div>
-					</div>
-					<div class="bee-block bee-block-2 bee-heading">
-						<h3><em>Kielitaito</em><br /> </h3>
-					</div>
-					<div class="bee-block bee-block-3 bee-paragraph">
-						<p>Puhumme sujuvasti suomea, englantia ja kiinaa ja tarjoamme saumattomia palveluita eri kielten ja kulttuurien välillä.</p>
-					</div>
-				</div>
-				<div class="bee-col bee-col-2 bee-col-w3">
-					<div class="bee-block bee-block-1 bee-icons">
-						<div class="bee-icon bee-icon-last">
-							<div class="bee-content">
-								<div class="bee-icon-image"><img alt="" height="32px" src="assets/4_custom-icon-placeholder.png" width="auto" /></div>
-							</div>
-						</div>
-					</div>
-					<div class="bee-block bee-block-2 bee-heading">
-						<h3><em>Asiantuntijuus</em><br /> </h3>
-					</div>
-					<div class="bee-block bee-block-3 bee-paragraph">
-						<p>Suomen ja Kiinan syvällisen tuntemuksen myötä tarjoamme sinulle luotettavaa ja ajantasaista tietoa.</p>
-					</div>
-				</div>
-				<div class="bee-col bee-col-3 bee-col-w3">
-					<div class="bee-block bee-block-1 bee-icons">
-						<div class="bee-icon bee-icon-last">
-							<div class="bee-content">
-								<div class="bee-icon-image"><img alt="" height="32px" src="assets/4_custom-icon-placeholder.png" width="auto" /></div>
-							</div>
-						</div>
-					</div>
-					<div class="bee-block bee-block-2 bee-heading">
-						<h3><em>Kokemus verkkokouluttamisesta</em><br /> </h3>
-					</div>
-					<div class="bee-block bee-block-3 bee-paragraph">
-						<p>Vuosien kokemus verkko opetuksesta takaa kiinnostavan ja tehokkaan verkko-oppimisympäristön.</p>
-					</div>
-				</div>
-				<div class="bee-col bee-col-4 bee-col-w3">
-					<div class="bee-block bee-block-1 bee-icons">
-						<div class="bee-icon bee-icon-last">
-							<div class="bee-content">
-								<div class="bee-icon-image"><img alt="" height="32px" src="assets/4_custom-icon-placeholder.png" width="auto" /></div>
-							</div>
-						</div>
-					</div>
-					<div class="bee-block bee-block-2 bee-heading">
-						<h3><em>Räätälöidyt palvelut</em><br /> </h3>
-					</div>
-					<div class="bee-block bee-block-3 bee-paragraph">
-						<p>Tarjoamme organisaatiosi tarpeisiin mukautettuja palveluita, jotta voitte<br />saavuttaa tavoitteenne onnistuneesti.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="bee-row bee-row-18">
-			<div class="bee-row-content">
-				<div class="bee-col bee-col-1 bee-col-w12">
-					<div class="bee-block bee-block-1 bee-spacer">
-						<div class="spacer" style="height:60px;"></div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="bee-row bee-row-19">
-			<div class="bee-row-content">
-				<div class="bee-col bee-col-1 bee-col-w12">
-					<div class="bee-block bee-block-1 bee-spacer">
-						<div class="spacer" style="height:20px;"></div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="bee-row bee-row-20">
-			<div class="bee-row-content">
-				<div class="bee-col bee-col-1 bee-col-w12">
-					<div class="bee-block bee-block-1 bee-spacer">
-						<div class="spacer" style="height:40px;"></div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="bee-row bee-row-21">
-			<div class="bee-row-content">
-				<div class="bee-col bee-col-1 bee-col-w6">
-					<div class="bee-block bee-block-1 bee-image"><img alt="Hand and book" class="bee-center bee-fixedwidth" src="assets/5_IMG_4599 copy.JPG" style="max-width:374px;border-radius:30px;" /></div>
-				</div>
-				<div class="bee-col bee-col-2 bee-col-w6">
-					<div class="bee-block bee-block-1 bee-heading">
-						<h2><span class="tinyMce-placeholder">Kouluttaja ja konsultti<br /></span> </h2>
-					</div>
-					<div class="bee-block bee-block-2 bee-paragraph">
-						<p><strong>Anni-Lotta Simpanen (VTM)</strong></p>
-					</div>
-					<div class="bee-block bee-block-3 bee-paragraph">
-						<p>Olen monikielinen konsultti ja Kiina-asiantuntija, jolla on vuosien kokemus kielten opetuksesta ja kääntämisestä. Olen valmistunut Itä-Aasian tutkimuksen maisteriohjelmasta ja asuin aiemmin lähes seitsemän vuoden ajan Kiinassa (2013-2020). Puhun sujuvasti suomea, englantia ja kiinaa. </p>
-					</div>
-					<div class="bee-block bee-block-4 bee-button"><a class="bee-button-content" href="mailto:info@ginkgo.fi" style="font-size: 16px; display: inline-block;" target="_blank"><span style="word-break: break-word; font-size: 16px; line-height: 200%; letter-spacing: normal;">Ota yhteyttä</span></a></div>
-				</div>
-			</div>
-		</div>
-		<div class="bee-row bee-row-22">
-			<div class="bee-row-content">
-				<div class="bee-col bee-col-1 bee-col-w12">
-					<div class="bee-block bee-block-1 bee-spacer">
-						<div class="spacer" style="height:40px;"></div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="bee-row bee-row-23">
-			<div class="bee-row-content">
-				<div class="bee-col bee-col-1 bee-col-w12">
-					<div class="bee-block bee-block-1 bee-spacer">
-						<div class="spacer" style="height:20px;"></div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="bee-row bee-row-24">
-			<div class="bee-row-content">
-				<div class="bee-col bee-col-1 bee-col-w12">
-					<div class="bee-block bee-block-1 bee-spacer">
-						<div class="spacer" style="height:60px;"></div>
-					</div>
-					<div class="bee-block bee-block-2 bee-divider">
-						<div class="center bee-separator" style="border-top:5px solid #aab49b;width:5%;"></div>
-					</div>
-					<div class="bee-block bee-block-3 bee-heading">
-						<h2>Mitä asiakkaani sanovat?<br /> </h2>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="bee-row bee-row-25">
-			<div class="bee-row-content">
-				<div class="bee-col bee-col-1 bee-col-w4">
-					<div class="bee-block bee-block-1 bee-paragraph">
-						<p><em>"Kurssin sisältö keskittyi hyvin olennaiseen ja oli</em> <em>helppoa sisäistää. Anni oli erittäin ystävällinen. Kun minulla oli kysyttävää, hän auttoi minua heti."  </em></p>
-						<p><em><strong>Finest Future</strong></em></p>
-					</div>
-				</div>
-				<div class="bee-col bee-col-2 bee-col-w4">
-					<div class="bee-block bee-block-1 bee-paragraph">
-						<p><em>"Anni on osoittanut kattavaa Kiinan-tuntemusta ja vahvaa kykyä kehittää korkealaatuisia oppimateriaaleja myös muiden Aasian maiden liiketoiminta-ympäristöistä. [...] kaiken kaikkiaan on ollut ilo työskennellä hänen kanssaan." </em></p>
-						<p><em><strong>Turun yliopisto</strong></em></p>
-					</div>
-				</div>
-				<div class="bee-col bee-col-3 bee-col-w4">
-					<div class="bee-block bee-block-1 bee-paragraph">
-						<p><em>"Anni on erittäin lämmin ja ammattitaitoinen opettaja. Aloittelijan oli helppo sulatella uutta tietoa ja oppia. Kiitos miellyttävästä oppimismatkasta." </em></p>
-						<p><em><strong>Cross Northern Pole Oy</strong></em></p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="bee-row bee-row-26">
-			<div class="bee-row-content">
-				<div class="bee-col bee-col-1 bee-col-w12">
-					<div class="bee-block bee-block-1 bee-spacer">
-						<div class="spacer" style="height:60px;"></div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="bee-row bee-row-27">
-			<div class="bee-row-content">
-				<div class="bee-col bee-col-1 bee-col-w12">
-					<div class="bee-block bee-block-1 bee-spacer">
-						<div class="spacer" style="height:20px;"></div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="bee-row bee-row-28">
-			<div class="bee-row-content">
-				<div class="bee-col bee-col-1 bee-col-w12">
-					<div class="bee-block bee-block-1 bee-spacer">
-						<div class="spacer" style="height:50px;"></div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="bee-row bee-row-29">
-			<div class="bee-row-content">
-				<div class="bee-col bee-col-1 bee-col-w12">
-					<div class="bee-block bee-block-1 bee-divider">
-						<div class="center bee-separator" style="border-top:5px solid #aab49b;width:5%;"></div>
-					</div>
-					<div class="bee-block bee-block-2 bee-heading">
-						<h2><em>Usein kysytyt kysymykset</em><br /> </h2>
-					</div>
-					<div class="bee-block bee-block-3 bee-icons">
-						<div class="bee-icon bee-icon-last">
-							<div class="bee-content">
-								<div class="bee-icon-image"><img alt="a black cross in a grey square" height="32px" src="assets/6_faqs-icon.png" width="auto" /></div>
-								<div class="bee-icon-label bee-icon-label-right">Kenelle palvelut on suunnattu?</div>
-							</div>
-						</div>
-					</div>
-					<div class="bee-block bee-block-4 bee-paragraph">
-						<p>Palvelemme suomalaisia yrityksiä, joilla on kiinalaisia asiakkaita, yhteistyökumppaneita tai suunnitelmia laajentaa Kiinan markkinoille. Asiakkaitamme ovat mm. matkailualan yritykset, koulutusorganisaatiot ja teollisuuden toimijat. Tarjoamme palveluita myös Suomen markkinoista kiinnostuneille kiinalaisille toimijoille.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="bee-row bee-row-30">
-			<div class="bee-row-content">
-				<div class="bee-col bee-col-1 bee-col-w12">
-					<div class="bee-block bee-block-1 bee-spacer">
-						<div class="spacer" style="height:20px;"></div>
-					</div>
-					<div class="bee-block bee-block-2 bee-icons">
-						<div class="bee-icon bee-icon-last">
-							<div class="bee-content">
-								<div class="bee-icon-image"><img alt="a black cross in a grey square" height="32px" src="assets/6_faqs-icon.png" width="auto" /></div>
-								<div class="bee-icon-label bee-icon-label-right">Mitä hyötyä koulutuksista ja valmennuksista on liiketoiminnalle?</div>
-							</div>
-						</div>
-					</div>
-					<div class="bee-block bee-block-3 bee-paragraph">
-						<p>Kulttuurien välinen osaaminen vahvistaa luottamusta, ehkäisee väärinymmärryksiä ja tehostaa yhteistyötä. Oikeanlainen viestintä ja kohdennettu markkinointi auttavat erottautumaan ja rakentamaan pitkäaikaisia asiakassuhteita.</p>
-					</div>
-					<div class="bee-block bee-block-4 bee-spacer">
-						<div class="spacer" style="height:20px;"></div>
-					</div>
-					<div class="bee-block bee-block-5 bee-icons">
-						<div class="bee-icon bee-icon-last">
-							<div class="bee-content">
-								<div class="bee-icon-image"><img alt="a black cross in a grey square" height="32px" src="assets/6_faqs-icon.png" width="auto" /></div>
-								<div class="bee-icon-label bee-icon-label-right">Voiko koulutuksia räätälöidä oman toimialan tai henkilöstön tarpeisiin?</div>
-							</div>
-						</div>
-					</div>
-					<div class="bee-block bee-block-6 bee-paragraph">
-						<p>Kyllä. Palvelumme ja tuotteemme räätälöidään asiakkaan toimialan ja henkilöstön mukaan. Sisältö rakennetaan aina asiakkaan tavoitteet ja tilanne huomioiden.</p>
-					</div>
-					<div class="bee-block bee-block-7 bee-spacer">
-						<div class="spacer" style="height:20px;"></div>
-					</div>
-					<div class="bee-block bee-block-8 bee-icons">
-						<div class="bee-icon bee-icon-last">
-							<div class="bee-content">
-								<div class="bee-icon-image"><img alt="a black cross in a grey square" height="32px" src="assets/6_faqs-icon.png" width="auto" /></div>
-								<div class="bee-icon-label bee-icon-label-right">Miten yhteistyö etenee, jos olemme kiinnostuneita?</div>
-							</div>
-						</div>
-					</div>
-					<div class="bee-block bee-block-9 bee-paragraph">
-						<p>Aloitamme lyhyellä maksuttomalla kartoituksella. Sen jälkeen tarjoamme teille sopivan palvelukokonaisuuden nopealla aikataululla - kolmen arkipäivän kuluessa. Toteutus voidaan tehdä täysin etänä, joustavasti teidän aikataulujenne mukaan.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="bee-row bee-row-31">
-			<div class="bee-row-content">
-				<div class="bee-col bee-col-1 bee-col-w12">
-					<div class="bee-block bee-block-1 bee-spacer">
-						<div class="spacer" style="height:120px;"></div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="bee-row bee-row-32">
-			<div class="bee-row-content">
-				<div class="bee-col bee-col-1 bee-col-w12">
-					<div class="bee-block bee-block-1 bee-spacer">
-						<div class="spacer" style="height:30px;"></div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="bee-row bee-row-33">
-			<div class="bee-row-content">
-				<div class="bee-col bee-col-1 bee-col-w3">
-					<div class="bee-block bee-block-1 bee-image"><a href="https://www.example.com" target="_blank"><img alt="Your logo" class="bee-fixedwidth" src="assets/7_Pink Cute Simple Flower Shop Circle Logo-2.png" style="max-width:156px;" /></a></div>
-				</div>
-				<div class="bee-col bee-col-2 bee-col-w3">
-					<div class="bee-block bee-block-1 bee-paragraph"></div>
-					<div class="bee-block bee-block-2 bee-paragraph">
-						<p><a href="http://www.example.com" rel="noopener" style="text-decoration: none;" target="_blank">info(a)ginkgo.fi</a></p>
-					</div>
-					<div class="bee-block bee-block-3 bee-paragraph">
-						<p><a href="http://www.example.com" rel="noopener" style="text-decoration: none;" target="_blank">+358 44 912 3879</a></p>
-					</div>
-				</div>
-				<div class="bee-col bee-col-3 bee-col-w3">
-					<div class="bee-block bee-block-1 bee-heading">
-						<h3><span class="tinyMce-placeholder"></span> </h3>
-					</div>
-					<div class="bee-block bee-block-2 bee-social">
-						<div class="content"><span class="icon" style="padding:0 2.5px 0 2.5px;"><a href="https://www.linkedin.com/in/annilottasimpanen" target="_self"><img alt="Linkedin" src="assets/8_linkedin@2x.png" title="linkedin" /></a></span></div>
-					</div>
-					<div class="bee-block bee-block-3 bee-paragraph"></div>
-				</div>
-				<div class="bee-col bee-col-4 bee-col-w3">
-					<div class="bee-block bee-block-1 bee-paragraph"></div>
-					<div class="bee-block bee-block-2 bee-paragraph">
-						<p> 2025 © Ginkgo Languages &amp; Consulting</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="bee-row bee-row-34">
-			<div class="bee-row-content">
-				<div class="bee-col bee-col-1 bee-col-w12">
-					<div class="bee-block bee-block-1 bee-spacer">
-						<div class="spacer" style="height:30px;"></div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="bee-row bee-row-35">
-			<div class="bee-row-content">
-				<div class="bee-col bee-col-1 bee-col-w12">
-					<div class="bee-block bee-block-1 bee-icons">
-						<div class="bee-icon bee-icon-last">
-							<div class="bee-content">
-								<div class="bee-icon-image"><a href="http://designedwithbeefree.com/" target="_blank" title="Designed with Beefree"><img alt="Beefree Logo" height="32px" src="assets/9_Beefree-logo.png" width="auto" /></a></div>
-								<div class="bee-icon-label bee-icon-label-right"><a href="http://designedwithbeefree.com/" target="_blank" title="Designed with Beefree">Designed with Beefree</a></div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo-wrapper">
+                <a href="#top">
+                    <img src="assets/2_Ginkgo_cropped.png" alt="Ginkgo logo" class="logo-img">
+                </a>
+                <a href="#top" class="logo-text">Ginkgo Languages &<br>Consulting</a>
+            </div>
+            <span class="menu-toggle" role="button" aria-label="Menu">☰</span>
+            <ul class="nav-menu">
+                <li class="home-link"><a href="#top">Alkuun</a></li>
+                <li><a href="#yrityksille">Yrityksille</a></li>
+                <li><a href="#esimerkkipaketit">Esimerkkipaketit</a></li>
+                <li><a href="#yksityisille">Yksityishenkilöille</a></li>
+                <li><a href="#tietoa">Tietoa</a></li>
+            </ul>
+        </div>
+    </nav>
 
+    <!-- Hero Section -->
+    <section class="hero" id="top">
+        <div class="container">
+            <div class="hero-content">
+                <h1><em>Ginkgo Languages & Consulting</em></h1>
+                <p>Ginkgo tarjoaa kielikoulutuksia, kulttuurivalmennusta ja konsultaatiopalveluita Suomesta ja Kiinasta kiinnostuneille yksityishenkilöille ja organisaatioille.</p>
+                <a href="mailto:info@ginkgo.fi" class="button">Ota yhteyttä</a>
+            </div>
+            <div class="hero-image">
+                <img src="assets/2_Ginkgo.png" alt="Students">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services for Companies -->
+    <section class="services bg-dark text-white" id="yrityksille">
+        <div class="container">
+            <h2 class="text-center"><em>Palvelut yrityksille</em></h2>
+            <p class="services-intro text-center">
+                Räätälöidyt kieli- ja kulttuurikoulutusohjelmamme suunnitellaan palvelemaan organisaatiosi ainutlaatuisia tarpeita. Palvelut toteutetaan joustavalla aikataululla verkossa.
+            </p>
+
+            <div class="services-grid">
+                <div class="service-item">
+                    <img src="assets/3_icon-tick.png" alt="✓" class="service-icon">
+                    <h3><em>Kielikurssit - suomi, englanti ja kiina</em></h3>
+                    <p>Tiimien kielitaito on keskeinen tekijä kulttuurien välisessä viestinnässä ja onnistuneen kansainvälisen yhteistyön edistämisessä. Ginkgo tarjoaa kielikursseja, jotka on räätälöity henkilöstön osaamisen ja asiakkaan ainutlaatuisen tilanteen ja tarpeiden mukaan.</p>
+                </div>
+                <div class="service-item">
+                    <img src="assets/3_icon-tick.png" alt="✓" class="service-icon">
+                    <h3><em>Kulttuurivalmennukset</em></h3>
+                    <p>Uusissa kulttuuriympäristöissä toimiminen voi olla haasteellista. Tarjoamme koulutusta paikalliseen tapakulttuuriin ja yrityskulttuuriin liittyen. Paketteihin voidaan sisällyttää myös kielitunteja ja konsultaatiopalveluita.</p>
+                </div>
+                <div class="service-item">
+                    <img src="assets/3_icon-tick.png" alt="✓" class="service-icon">
+                    <h3><em>Markkinointi- ja viestintästrategian kehittäminen (Kiina)</em></h3>
+                    <p>Autamme suomalaisyrityksiä onnistumaan Kiinan digikanavissa. Tarjoamme selkeän katsauksen kiinalaisen sosiaalisen median ekosysteemiin, räätälöidyn markkinointistrategian, sekä tukea kohderyhmien tavoittamiseen ja mainonnan kohdentamiseen.</p>
+                </div>
+                <div class="service-item">
+                    <img src="assets/3_icon-tick.png" alt="✓" class="service-icon">
+                    <h3><em>Konsultaatio- ja käännöspalvelut</em></h3>
+                    <p>Tarjoamme neuvoja ja tukea Suomeen tai Kiinaan matkustamiseen, asettautumiseen ja arjen navigointiin. Meiltä saat myös markkinatutkimuspalveluita ja ajantasaisia toimialakatsauksia. Lisäksi tarjoamme käännöspalveluita (englanti, suomi, kiina). Voimme kääntää yrityksen nimen, nettisivut ja muut tärkeät materiaalit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Logo separator -->
+    <div class="logo-separator">
+        <img src="assets/2_Ginkgo.png" alt="Ginkgo logo">
+    </div>
+
+    <!-- Example Packages -->
+    <section id="esimerkkipaketit">
+        <div class="container">
+            <div class="divider"></div>
+            <h2 class="text-center" style="margin-top: 40px;"><em>Esimerkkipaketit</em></h2>
+            <p class="text-center" style="max-width: 900px; margin: 40px auto; font-size: 21px;">
+                Koulutuspaketti luo pohjan onnistuneelle kansainväliselle yhteistyölle. Kielituntien ja kulttuurikoulutusten lähtöhinta on 90 €/tunti. Valmennukset voivat sisältää mm. käytännön harjoituksia, tapausesimerkkejä kiinalaissuomalaisesta yhteistyöstä, työpajoja ja ryhmäkeskusteluja opitun sisäistämiseksi sekä materiaaleja (PDF-oppaat, sanastot, videot).
+            </p>
+
+            <div class="packages-grid">
+                <div class="package">
+                    <h4><strong>Yleinen kieli- ja kulttuurikoulutus</strong></h4>
+                    <p><em><strong>Kiina: menestyksen avaimet; 720 €<br>(8h + materiaalit)</strong></em></p>
+                    <ul>
+                        <li>Kiinan kieli ja keskeiset fraasit arjen, työelämän ja neuvottelutilanteiden tueksi</li>
+                        <li>Paikalliset käytännöt arjessa ja yritysmaailmassa: arjen sovellukset ja verkostoituminen</li>
+                        <li>Liiketoimintakulttuuri: kokoukset, neuvottelut ja hierarkia</li>
+                        <li>Kulttuuriset tavat ja käytännöt viestinnässä</li>
+                        <li>Toimialakohtaiset piirteet ja alueelliset erot</li>
+                    </ul>
+                </div>
+                <div class="package">
+                    <h4><strong>Koulutus matkailualan yrittäjille</strong></h4>
+                    <p><em><strong>Kohdenna Kiinaan; 800 €<br>(6h + materiaalit)</strong></em></p>
+                    <ul>
+                        <li>Palveluiden kohdentaminen ja luottamuksen<br>rakentaminen</li>
+                        <li>Hyödyllisiä kiinan kielisiä sanoja ja fraaseja asiakaspalvelutilanteita varten</li>
+                        <li>Kiinalainen sosiaalisen median ekosysteemi</li>
+                        <li>Asiakasryhmät ja markkinoinnin kohdentaminen</li>
+                        <li>Someprofiilien luominen, ohjeet niiden käyttöön sekä räätälöity julkaisusuunnitelma (ml. avainsanat, fraasit ja hashtagit kiinaksi)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services for Individuals -->
+    <section class="bg-light-green" id="yksityisille">
+        <div class="container">
+            <h2 class="text-center"><em>Palvelut yksityishenkilöille</em></h2>
+            <p class="text-center" style="max-width: 900px; margin: 40px auto; font-size: 21px;">
+                Tarjoamme yksityis- ja ryhmätunteja sekä omaan tahtiin suoritettavia verkkokursseja suomen, englannin ja mandariinikiinan opiskelijoille. Lisätietoa tunneista ja kursseista saat sähköpostitse info(a)ginkgo.fi.
+            </p>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="bg-dark text-white rounded-top" id="tietoa">
+        <div class="container">
+            <h2 class="text-center"><em>Ginkgo Languages & Consulting</em></h2>
+            <p class="text-center" style="max-width: 900px; margin: 40px auto; font-size: 21px;">
+                Ginkgo Languages & Consulting on suomalainen vuonna 2024 perustettu yritys. Ginkgo tarjoaa Suomen ja Kiinan kieliin ja kulttuureihin liittyviä asiantuntija-palveluita. Yrityksen nimi tulee kauniista Ginkgo-puusta (suom. neidonhiuspuu), joka edustaa sisukkuutta, sopeutumiskykyä ja viisautta.
+            </p>
+            <div class="divider" style="margin: 40px auto;"></div>
+            <h2 class="text-center" style="margin-top: 40px;"><em>Syitä valita meidät</em></h2>
+
+            <div class="features-grid">
+                <div class="feature">
+                    <img src="assets/4_custom-icon-placeholder.png" alt="" class="feature-icon">
+                    <h3><em>Kielitaito</em></h3>
+                    <p>Puhumme sujuvasti suomea, englantia ja kiinaa ja tarjoamme saumattomia palveluita eri kielten ja kulttuurien välillä.</p>
+                </div>
+                <div class="feature">
+                    <img src="assets/4_custom-icon-placeholder.png" alt="" class="feature-icon">
+                    <h3><em>Asiantuntijuus</em></h3>
+                    <p>Suomen ja Kiinan syvällisen tuntemuksen myötä tarjoamme sinulle luotettavaa ja ajantasaista tietoa.</p>
+                </div>
+                <div class="feature">
+                    <img src="assets/4_custom-icon-placeholder.png" alt="" class="feature-icon">
+                    <h3><em>Kokemus verkkokouluttamisesta</em></h3>
+                    <p>Vuosien kokemus verkko-opetuksesta takaa kiinnostavan ja tehokkaan verkko-oppimisympäristön.</p>
+                </div>
+                <div class="feature">
+                    <img src="assets/4_custom-icon-placeholder.png" alt="" class="feature-icon">
+                    <h3><em>Räätälöidyt palvelut</em></h3>
+                    <p>Tarjoamme organisaatiosi tarpeisiin mukautettuja palveluita, jotta voitte saavuttaa tavoitteenne onnistuneesti.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Person -->
+    <section class="bg-light-green rounded-bottom">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="assets/5_IMG_4599 copy.JPG" alt="Hand and book">
+                </div>
+                <div class="about-content">
+                    <h2>Kouluttaja ja konsultti</h2>
+                    <p class="name"><strong>Anni-Lotta Simpanen (VTM)</strong></p>
+                    <p>Olen monikielinen konsultti ja Kiina-asiantuntija, jolla on vuosien kokemus kielten opetuksesta ja kääntämisestä. Olen valmistunut Itä-Aasian tutkimuksen maisteriohjelmasta ja asuin aiemmin lähes seitsemän vuoden ajan Kiinassa (2013-2020). Puhun sujuvasti suomea, englantia ja kiinaa.</p>
+                    <a href="mailto:info@ginkgo.fi" class="button">Ota yhteyttä</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="bg-dark text-white rounded-top">
+        <div class="container">
+            <div class="divider"></div>
+            <h2 class="text-center" style="margin: 40px 0;">Mitä asiakkaani sanovat?</h2>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial">
+                    <p><em>"Kurssin sisältö keskittyi hyvin olennaiseen ja oli helppoa sisäistää. Anni oli erittäin ystävällinen. Kun minulla oli kysyttävää, hän auttoi minua heti."</em></p>
+                    <p><em><strong>Finest Future</strong></em></p>
+                </div>
+                <div class="testimonial">
+                    <p><em>"Anni on osoittanut kattavaa Kiinan-tuntemusta ja vahvaa kykyä kehittää korkealaatuisia oppimateriaaleja myös muiden Aasian maiden liiketoiminta-ympäristöistä. [...] kaiken kaikkiaan on ollut ilo työskennellä hänen kanssaan."</em></p>
+                    <p><em><strong>Turun yliopisto</strong></em></p>
+                </div>
+                <div class="testimonial">
+                    <p><em>"Anni on erittäin lämmin ja ammattitaitoinen opettaja. Aloittelijan oli helppo sulatella uutta tietoa ja oppia. Kiitos miellyttävästä oppimismatkasta."</em></p>
+                    <p><em><strong>Cross Northern Pole Oy</strong></em></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="bg-dark rounded-bottom" style="height: 60px;"></div>
+
+    <!-- FAQ -->
+    <section>
+        <div class="container">
+            <div class="divider"></div>
+            <h2 class="text-center" style="margin: 40px 0;"><em>Usein kysytyt kysymykset</em></h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <img src="assets/6_faqs-icon.png" alt="+" class="faq-icon">
+                    <span>Kenelle palvelut on suunnattu?</span>
+                </div>
+                <p class="faq-answer">
+                    Palvelemme suomalaisia yrityksiä, joilla on kiinalaisia asiakkaita, yhteistyökumppaneita tai suunnitelmia laajentaa Kiinan markkinoille. Asiakkaitamme ovat mm. matkailualan yritykset, koulutusorganisaatiot ja teollisuuden toimijat. Tarjoamme palveluita myös Suomen markkinoista kiinnostuneille kiinalaisille toimijoille.
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <img src="assets/6_faqs-icon.png" alt="+" class="faq-icon">
+                    <span>Mitä hyötyä koulutuksista ja valmennuksista on liiketoiminnalle?</span>
+                </div>
+                <p class="faq-answer">
+                    Kulttuurien välinen osaaminen vahvistaa luottamusta, ehkäisee väärinymmärryksiä ja tehostaa yhteistyötä. Oikeanlainen viestintä ja kohdennettu markkinointi auttavat erottautumaan ja rakentamaan pitkäaikaisia asiakassuhteita.
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <img src="assets/6_faqs-icon.png" alt="+" class="faq-icon">
+                    <span>Voiko koulutuksia räätälöidä oman toimialan tai henkilöstön tarpeisiin?</span>
+                </div>
+                <p class="faq-answer">
+                    Kyllä. Palvelumme ja tuotteemme räätälöidään asiakkaan toimialan ja henkilöstön mukaan. Sisältö rakennetaan aina asiakkaan tavoitteet ja tilanne huomioiden.
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <img src="assets/6_faqs-icon.png" alt="+" class="faq-icon">
+                    <span>Miten yhteistyö etenee, jos olemme kiinnostuneita?</span>
+                </div>
+                <p class="faq-answer">
+                    Aloitamme lyhyellä maksuttomalla kartoituksella. Sen jälkeen tarjoamme teille sopivan palvelukokonaisuuden nopealla aikataululla - kolmen arkipäivän kuluessa. Toteutus voidaan tehdä täysin etänä, joustavasti teidän aikataulujenne mukaan.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-logo">
+                    <a href="#top">
+                        <img src="assets/7_Pink Cute Simple Flower Shop Circle Logo-2.png" alt="Ginkgo logo">
+                    </a>
+                </div>
+                <div class="footer-col">
+                    <p><a href="mailto:info@ginkgo.fi">info(a)ginkgo.fi</a></p>
+                    <p><a href="tel:+358449123879">+358 44 912 3879</a></p>
+                </div>
+                <div class="footer-col">
+                    <a href="https://www.linkedin.com/in/annilottasimpanen" target="_blank" class="social-link">
+                        <img src="assets/8_linkedin@2x.png" alt="LinkedIn">
+                    </a>
+                </div>
+                <div class="footer-col">
+                    <p class="copyright">2025 © Ginkgo Languages & Consulting</p>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="http://designedwithbeefree.com/" target="_blank" style="display: inline-flex; align-items: center; gap: 10px; color: #1e0e4b; font-size: 15px;">
+                    <img src="assets/9_Beefree-logo.png" alt="Beefree Logo" style="height: 32px;">
+                    Designed with Beefree
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const navbar = document.querySelector('.navbar');
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navMenu = document.querySelector('.nav-menu');
+            const navLinks = document.querySelectorAll('.nav-menu a');
+
+            menuToggle.addEventListener('click', function() {
+                navbar.classList.toggle('open-menu');
+                navMenu.classList.toggle('open');
+            });
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+
+                    // Close menu
+                    navbar.classList.remove('open-menu');
+                    navMenu.classList.remove('open');
+
+                    // Smooth scroll
+                    if (targetElement) {
+                        setTimeout(() => {
+                            targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }, 300);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
 </html>
