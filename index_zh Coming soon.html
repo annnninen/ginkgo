@@ -1,0 +1,1135 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ginkgo Languages & Consulting</title>
+    <meta name="description" content="Ginkgo 为对芬兰和中国感兴趣的个人和组织提供语言培训、文化辅导和咨询服务。">
+    <meta property="og:title" content="Ginkgo Languages & Consulting">
+    <meta property="og:description" content="语言培训、文化辅导和咨询服务">
+    <meta property="og:type" content="website">
+    <link rel="alternate" hreflang="fi" href="https://ginkgo.fi/index.html" />
+    <link rel="alternate" hreflang="en" href="https://ginkgo.fi/index_en.html" />
+    <link rel="alternate" hreflang="zh" href="https://ginkgo.fi/index_zh.html" />
+    <link rel="alternate" hreflang="x-default" href="https://ginkgo.fi/index.html" />
+
+    <style>
+        /* CSS Variables for consistent styling */
+        :root {
+            --primary-dark: #243931;
+            --primary-green: #2A7D67;
+            --light-green: #dff2e7;
+            --light-gray: #aab49b;
+            --text-gray: #4b6158;
+            --text-dark: #101112;
+            --purple-accent: #7747FF;
+            --max-width: 1245px;
+            --content-padding: 60px;
+            --mobile-padding: 20px;
+            --section-radius: 30px;
+            --section-spacing: 60px;
+        }
+
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 100px;
+        }
+
+        body {
+            font-family: Georgia, Times, 'Times New Roman', serif;
+            color: var(--text-dark);
+            background-color: #ffffff;
+            line-height: 1.6;
+        }
+
+        /* Typography */
+        h1,
+        h2,
+        h3 {
+            font-weight: 400;
+            line-height: 1.2;
+        }
+
+        h1 {
+            font-size: 49px;
+            color: var(--primary-dark);
+        }
+
+        h2 {
+            font-size: 37px;
+        }
+
+        h3 {
+            font-size: 25px;
+        }
+
+        p {
+            margin-bottom: 16px;
+        }
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        em {
+            font-style: italic;
+        }
+
+        /* Utility classes */
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 var(--content-padding);
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .text-white {
+            color: #ffffff;
+        }
+
+        .bg-dark {
+            background-color: var(--primary-dark);
+        }
+
+        .bg-light-green {
+            background-color: var(--light-green);
+        }
+
+        .rounded-top {
+            border-radius: var(--section-radius) var(--section-radius) 0 0;
+        }
+
+        .rounded-bottom {
+            border-radius: 0 0 var(--section-radius) var(--section-radius);
+        }
+
+        /* Navigation */
+        .navbar {
+            background-color: #ffffff;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            margin-bottom: 3rem;
+        }
+
+        .navbar .container {
+            display: flex;
+            align-items: center;
+            /* Removed justify-content: space-between to reduce gap */
+            padding: 0.5rem var(--content-padding);
+        }
+
+        .logo-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            /* Restored gap */
+            /* Removed margin-right: auto to bring menu closer */
+            flex-shrink: 0;
+            /* Prevent logo from shrinking */
+        }
+
+        .logo-img {
+            height: 70px;
+            /* Increased height slightly */
+            width: auto;
+        }
+
+        .logo-text {
+            font-size: 1.65rem;
+            /* Increased font size */
+            color: var(--primary-dark);
+            font-weight: 500;
+            line-height: 1.1;
+            transition: transform 0.3s;
+            max-width: 400px;
+            /* Limit width to force wrap if necessary, but keep it reasonable */
+        }
+
+        .logo-text:hover {
+            transform: scale(1.05);
+        }
+
+        .nav-menu {
+            list-style: none;
+            display: flex;
+            margin-left: 3rem;
+            /* Fixed margin for separation */
+            gap: 1.2rem;
+            /* Increased gap */
+            align-items: center;
+        }
+
+        .nav-menu a {
+            font-size: 1.3rem;
+            /* Increased font size */
+            font-weight: 500;
+            padding: 0.5rem;
+            border-radius: 4px;
+            letter-spacing: 0.06rem;
+            position: relative;
+            transition: color 0.25s ease, transform 0.25s ease;
+            white-space: nowrap;
+        }
+
+        .nav-menu a::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary-green);
+            transition: width 0.3s;
+        }
+
+        .nav-menu a:hover {
+            color: var(--primary-green);
+            transform: scale(1.05);
+        }
+
+        .nav-menu a:hover::after {
+            width: 100%;
+        }
+
+        /* Language Switcher */
+        .lang-desktop {
+            position: relative;
+            display: flex;
+            align-items: center;
+            margin-left: 15px;
+            /* Reduced margin */
+            height: 100%;
+            padding: 10px 0;
+            /* Add vertical padding to bridge gap */
+            z-index: 1001;
+            /* Ensure above other nav items */
+        }
+
+        .lang-current {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            padding: 5px;
+        }
+
+        .lang-flag {
+            width: 30px;
+            /* Increased size */
+            height: auto;
+            border-radius: 4px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            display: block;
+        }
+
+        .lang-dropdown {
+            display: none;
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background-color: #ffffff;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding: 8px;
+            flex-direction: column;
+            gap: 8px;
+            min-width: 50px;
+            align-items: center;
+            z-index: 1100;
+            margin-top: -5px;
+            /* Pull up slightly to ensure overlap */
+        }
+
+        .lang-desktop:hover .lang-dropdown {
+            display: flex;
+        }
+
+        .lang-option {
+            display: block;
+            /* Ensure link covers the area */
+            transition: transform 0.2s;
+            opacity: 0.8;
+        }
+
+        .lang-option:hover {
+            transform: scale(1.1);
+            opacity: 1;
+        }
+
+        /* Mobile Language Links */
+        .lang-mobile {
+            display: none;
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid #eee;
+            width: 100%;
+            text-align: center;
+        }
+
+        .lang-mobile a {
+            display: block;
+            padding: 10px 0;
+            font-size: 1.1rem !important;
+            font-weight: normal !important;
+            color: var(--text-gray);
+        }
+
+        .lang-mobile a:hover {
+            color: var(--primary-green);
+        }
+
+        .menu-toggle {
+            display: none;
+            cursor: pointer;
+            font-size: 1.5rem;
+            margin-left: auto;
+        }
+
+        .home-link {
+            display: none;
+        }
+
+        /* Sections */
+        section {
+            padding: var(--section-spacing) 0;
+        }
+
+        .hero {
+            padding-top: 0;
+        }
+
+        .hero .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .hero-content h1 {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        .hero-content p {
+            font-size: 23px;
+            color: var(--text-gray);
+            margin-bottom: 30px;
+        }
+
+        .hero-image img {
+            width: 100%;
+            max-width: 622px;
+            border-radius: 25px;
+            display: block;
+            margin: 0 auto;
+            /* center the hero image */
+        }
+
+        /* Buttons */
+        .button {
+            display: inline-block;
+            background-color: var(--primary-dark);
+            color: #ffffff;
+            padding: 15px 50px;
+            border-radius: 30px;
+            font-size: 16px;
+            font-weight: 700;
+            transition: transform 0.3s;
+        }
+
+        .button:hover {
+            transform: translateY(-2px);
+        }
+
+        /* Service sections */
+        .services {
+            background-color: var(--primary-dark);
+            color: #ffffff;
+        }
+
+        .services h2 {
+            margin-bottom: 40px;
+        }
+
+        .services-intro {
+            max-width: 100%;
+            /* Align the intro paragraph with other content by removing auto side margins */
+            margin: 0 0 60px;
+            font-size: 21px;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .service-item {
+            /* reduce horizontal padding so content aligns with the main container */
+            padding: 0 20px;
+        }
+
+        .service-icon {
+            width: 32px;
+            height: 32px;
+            margin-bottom: 20px;
+        }
+
+        .service-item h3 {
+            margin-bottom: 20px;
+        }
+
+        .service-item p {
+            font-size: 19px;
+            line-height: 1.5;
+        }
+
+        /* Divider */
+        .divider {
+            width: 5%;
+            height: 5px;
+            background-color: var(--light-gray);
+            margin: 0 auto;
+        }
+
+        /* Logo separator */
+        .logo-separator {
+            text-align: center;
+            padding-top: 40px;
+            padding-bottom: 5px;
+        }
+
+        .logo-separator img {
+            width: 187px;
+            height: auto;
+        }
+
+        /* Example packages */
+        .packages-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            margin-top: 40px;
+            align-items: flex-start;
+        }
+
+        .package h4 {
+            font-size: 19px;
+            margin-bottom: 10px;
+        }
+
+        .package ul {
+            list-style-position: inside;
+            font-size: 19px;
+            line-height: 1.6;
+            padding-left: 1rem;
+        }
+
+        .package li {
+            margin-bottom: 10px;
+        }
+
+        /* About section */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            padding: 40px 0;
+        }
+
+        .about-image img {
+            width: 100%;
+            max-width: 374px;
+            border-radius: 30px;
+        }
+
+        .about-content h2 {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .about-content .name {
+            font-size: 19px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+        }
+
+        .about-content p {
+            font-size: 19px;
+            color: var(--text-gray);
+            margin-bottom: 30px;
+        }
+
+        /* Features grid */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .feature {
+            text-align: center;
+            padding: 0 15px;
+        }
+
+        .feature-icon {
+            width: 32px;
+            height: 32px;
+            margin: 0 auto 20px;
+        }
+
+        .feature h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .feature p {
+            font-size: 19px;
+        }
+
+        /* Testimonials */
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .testimonial {
+            padding: 0 20px;
+            font-size: 19px;
+            text-align: center;
+        }
+
+        .testimonial strong {
+            display: block;
+            margin-top: 10px;
+        }
+
+        /* FAQ */
+        .faq-item {
+            margin-bottom: 20px;
+        }
+
+        .faq-question {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            font-size: 20px;
+            color: var(--primary-dark);
+            margin-bottom: 15px;
+        }
+
+        .faq-icon {
+            width: 32px;
+            height: 32px;
+            flex-shrink: 0;
+        }
+
+        .faq-answer {
+            font-size: 18px;
+            color: var(--text-gray);
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        /* Footer */
+        footer {
+            padding: 40px 0;
+        }
+
+        .footer-grid {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            width: 100%;
+        }
+
+        .footer-col {
+            font-size: 20px;
+            /* Match FAQ paragraph */
+            color: var(--text-gray);
+            /* Match FAQ paragraph */
+            /* Faux bold using text-stroke for "Medium" look */
+            -webkit-text-stroke: 0.4px currentColor;
+        }
+
+        /* Left Column */
+        .footer-col:nth-child(1) {
+            text-align: left;
+        }
+
+        /* Center Column */
+        .footer-col:nth-child(2) {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            white-space: nowrap;
+        }
+
+        /* Right Column */
+        .footer-col:nth-child(3) {
+            text-align: right;
+        }
+
+        .footer-col p {
+            margin-bottom: 10px;
+        }
+
+        /* Center column links (Email/Phone) */
+        .footer-col:nth-child(2) a {
+            color: var(--primary-dark);
+            /* Match FAQ subtitle */
+            display: block;
+            margin-bottom: 10px;
+            text-decoration: none;
+        }
+
+        .social-link img {
+            width: 48px;
+            /* Larger size */
+            height: 48px;
+            transition: transform 0.3s, filter 0.3s;
+        }
+
+        .social-link:hover img {
+            transform: scale(1.1);
+            /* Filter to approximate var(--primary-dark) #243931 */
+            filter: brightness(0) saturate(100%) invert(16%) sepia(12%) saturate(1352%) hue-rotate(103deg) brightness(95%) contrast(93%);
+        }
+
+        .copyright {
+            font-size: 20px;
+            line-height: 1.5;
+        }
+
+        /* Mobile styles */
+        @media (max-width: 1235px) {
+            .container {
+                padding: 0 var(--mobile-padding);
+            }
+
+            h1 {
+                font-size: 40px;
+                text-align: center;
+            }
+
+            /* Mobile navigation */
+            .navbar .container {
+                position: relative;
+                display: block;
+                text-align: center;
+                padding: 0.75rem 1rem;
+            }
+
+            .logo-img {
+                display: none;
+            }
+
+            .menu-toggle {
+                display: block;
+                position: absolute;
+                right: 1rem;
+                top: 0.75rem;
+            }
+
+            .nav-menu {
+                display: none;
+                flex-direction: column;
+                margin: 1rem 0 0 0;
+                text-align: right;
+                padding-right: 3rem;
+            }
+
+            .nav-menu.open {
+                display: flex;
+            }
+
+            .lang-desktop {
+                display: none;
+            }
+
+            .lang-mobile {
+                display: block;
+            }
+
+            .home-link {
+                display: list-item;
+            }
+
+            .navbar.open-menu .logo-text {
+                display: none;
+            }
+
+            /* Mobile layouts */
+            .hero .container,
+            .services-grid,
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-content {
+                text-align: center;
+            }
+
+            .hero-content h1 {
+                text-align: center;
+            }
+
+            .hero-image img {
+                margin: 0 auto;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 20px;
+            }
+
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .footer-col {
+                text-align: center;
+            }
+
+            .packages-grid {
+                align-items: center;
+            }
+
+            /* Allow example packages to stay side‑by‑side until narrower */
+            .packages-grid {
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 30px;
+            }
+
+            .package {
+                max-width: 500px;
+                margin: 0 auto;
+            }
+
+            /* Center the navbar logo text in mobile view */
+            .logo-wrapper {
+                justify-content: center;
+            }
+
+            /* Stack the features in one column on very small screens */
+            @media (max-width: 768px) {
+                .features-grid {
+                    grid-template-columns: 1fr;
+                    gap: 20px;
+                }
+            }
+        }
+
+        .packages-grid .package>p {
+            font-size: 1.3rem;
+        }
+
+        /* Reduce gap below logo separator */
+        #esimerkkipaketit {
+            padding-top: 30px;
+        }
+
+        /*
+         * Align body text to the left while keeping headings (h1–h4) centered.
+         * These rules ensure that paragraphs, list items and other text-heavy
+         * elements line up along the same left axis across the page. Titles
+         * such as section headings remain centered as defined elsewhere.
+         */
+        p {
+            /* Override any inherited center alignment on paragraphs */
+            text-align: left !important;
+        }
+
+        .services-intro,
+        .service-item p,
+        .packages-grid .package p,
+        .package li,
+        .about-content p,
+        .feature p,
+        .testimonial p,
+        .testimonial strong,
+        .faq-answer,
+        .footer-col p,
+        .footer-col a {
+            text-align: left !important;
+        }
+
+        /*
+         * Ensure paragraphs that still carry the `text-center` class (often used
+         * for introductions) align with the left edge of their container. We
+         * remove auto side margins and allow them to fill the full width of
+         * their parent container.
+         */
+        p.text-center {
+            max-width: 100% !important;
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+        }
+    </style>
+    <style>
+        /* Desktop layout adjustments (min-width: 1236px) */
+        @media (min-width: 1236px) {
+
+            /* 
+             * Scope changes to sections to exclude navbar and footer.
+             * Force left alignment for headings, paragraphs, and other text elements.
+             */
+            section h1,
+            section h2,
+            section h3,
+            section h4,
+            section p,
+            section .button,
+            section li {
+                text-align: left !important;
+            }
+
+            /* Reset margins for elements that were centered */
+            section .text-center,
+            section .services-intro,
+            section .package,
+            section .testimonial,
+            section .feature,
+            section .about-content,
+            section .hero-content {
+                text-align: left !important;
+                margin-left: 0 !important;
+                margin-right: 0 !important;
+                max-width: 100% !important;
+            }
+
+            /* Align icons to the left */
+            section .feature-icon,
+            section .service-icon {
+                margin-left: 0 !important;
+                margin-right: 0 !important;
+                display: block;
+            }
+
+            /* Align dividers to the left */
+            section .divider {
+                margin-left: 0 !important;
+                margin-right: auto !important;
+            }
+
+            /* Remove extra padding from grid items to align with container edge */
+            section .feature,
+            section .testimonial,
+            section .service-item {
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+            }
+
+            /* Ensure lists align properly */
+            section ul {
+                text-align: left;
+                padding-left: 1.2em;
+            }
+        }
+
+        /* Package Cards Redesign */
+        .package-card {
+            background-color: #ffffff;
+            border: 1px solid var(--light-green);
+            border-radius: 30px;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .package-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .package-content {
+            flex-grow: 1;
+            text-align: left !important;
+            /* Left alignment as requested */
+            margin-bottom: 30px;
+        }
+
+        .package-content h4 {
+            margin-bottom: 25px;
+            color: var(--primary-dark);
+            font-size: 22px;
+            /* Larger font */
+            text-align: left !important;
+        }
+
+        .package-content ul {
+            text-align: left !important;
+            list-style: disc;
+            /* Add bullets back */
+            padding-left: 1.5rem !important;
+            /* Indent for bullets */
+            margin: 0;
+        }
+
+        .package-content li {
+            margin-bottom: 12px;
+            font-size: 20px;
+            /* Larger font */
+            color: var(--text-dark);
+            text-align: left !important;
+        }
+
+        .package-action {
+            text-align: center !important;
+            margin-top: auto;
+        }
+
+        .package-button {
+            background-color: var(--primary-dark);
+            /* Deep green */
+            color: #ffffff !important;
+            width: 100%;
+            max-width: 100%;
+            padding: 20px 30px;
+            /* Larger padding */
+            line-height: 1.4;
+            border-radius: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: transform 0.3s ease;
+            /* Only transform */
+            font-size: 18px;
+            /* Larger text */
+            text-align: center;
+        }
+
+        .package-button:hover {
+            background-color: var(--primary-dark);
+            /* No color change */
+            transform: scale(1.05);
+            /* Scale animation */
+        }
+
+        .package-name {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .package-price {
+            font-size: 1.2em;
+            font-weight: bold;
+            opacity: 0.9;
+            margin-bottom: 5px;
+        }
+
+        .package-details {
+            font-size: 1em;
+            opacity: 0.9;
+            font-weight: normal;
+        }
+
+        /* Icon Header Alignment */
+        .icon-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        .icon-header h3 {
+            margin-bottom: 0 !important;
+        }
+
+        .icon-header .service-icon,
+        .icon-header .feature-icon {
+            margin-bottom: 0 !important;
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo-wrapper">
+                <a href="#top">
+                    <img src="assets/2_Ginkgo_cropped.png" alt="Ginkgo logo" class="logo-img">
+                </a>
+                <a href="#top" class="logo-text">Ginkgo Languages &<br>Consulting</a>
+            </div>
+            <span class="menu-toggle" role="button" aria-label="Menu">☰</span>
+            <ul class="nav-menu">
+                <li class="home-link"><a href="#top">首页</a></li>
+                <li><a href="#yrityksille">企业服务</a></li>
+                <li><a href="#esimerkkipaketit">示例套餐</a></li>
+                <li><a href="#yksityisille">个人服务</a></li>
+                <li><a href="#tietoa">关于我们</a></li>
+
+                <!-- Desktop Language Switcher -->
+                <li class="lang-desktop">
+                    <div class="lang-current">
+                        <img src="assets/flag_cn.svg" alt="中文" class="lang-flag">
+                    </div>
+                    <div class="lang-dropdown">
+                        <a href="index.html" class="lang-option" title="Suomi">
+                            <img src="assets/flag_fi.svg" alt="Suomi" class="lang-flag">
+                        </a>
+                        <a href="index_en.html" class="lang-option" title="English">
+                            <img src="assets/flag_gb.svg" alt="English" class="lang-flag">
+                        </a>
+                    </div>
+                </li>
+
+                <!-- Mobile Language Links -->
+                <li class="lang-mobile">
+                    <a href="index.html">Suomeksi</a>
+                    <a href="index_en.html">In English</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="top">
+        <div class="container">
+            <div class="hero-content">
+                <h1><em>Ginkgo Languages & Consulting</em></h1>
+                <p>Ginkgo 为对芬兰和中国感兴趣的个人和组织提供语言培训、文化辅导和咨询服务。</p>
+                <a href="#" class="button email-link" data-user="info" data-domain="ginkgo.fi">联系我们</a>
+            </div>
+            <div class="hero-image">
+                <img src="assets/2_Ginkgo.png" alt="Students">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Left: Copyright & Y-tunnus -->
+                <div class="footer-col">
+                    <p class="copyright">2025 © Ginkgo Languages & Consulting</p>
+                    <p>Business ID: 3496512-4</p>
+                </div>
+
+                <!-- Center: Contact Info -->
+                <div class="footer-col">
+                    <p><a href="#" class="email-link" data-user="info" data-domain="ginkgo.fi">info(a)ginkgo.fi</a></p>
+                    <p><a href="tel:+358449123879">+358 44 912 3879</a></p>
+                </div>
+
+                <!-- Right: LinkedIn -->
+                <div class="footer-col">
+                    <a href="https://www.linkedin.com/in/annilottasimpanen" target="_blank" class="social-link">
+                        <img src="assets/8_linkedin@2x.png" alt="LinkedIn">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.addEventListener('DOMContentLoaded', function () {
+            const navbar = document.querySelector('.navbar');
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navMenu = document.querySelector('.nav-menu');
+            const navLinks = document.querySelectorAll('.nav-menu a');
+
+            menuToggle.addEventListener('click', function () {
+                navbar.classList.toggle('open-menu');
+                navMenu.classList.toggle('open');
+            });
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', function (e) {
+                    const targetId = this.getAttribute('href');
+
+                    // Only intercept internal anchor links
+                    if (targetId.startsWith('#')) {
+                        e.preventDefault();
+                        const targetElement = document.querySelector(targetId);
+
+                        // Close menu
+                        navbar.classList.remove('open-menu');
+                        navMenu.classList.remove('open');
+
+                        // Smooth scroll
+                        if (targetElement) {
+                            setTimeout(() => {
+                                targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                            }, 300);
+                        }
+                    }
+                });
+            });
+
+            // Language Switcher Scroll Preservation
+            const langLinks = document.querySelectorAll('.lang-dropdown a, .lang-mobile a');
+            langLinks.forEach(link => {
+                link.addEventListener('click', function () {
+                    sessionStorage.setItem('scrollPosition', window.scrollY);
+                });
+            });
+
+            // Restore scroll position if set
+            const scrollPosition = sessionStorage.getItem('scrollPosition');
+            if (scrollPosition) {
+                window.scrollTo(0, parseInt(scrollPosition));
+                sessionStorage.removeItem('scrollPosition');
+            }
+
+            // Email Obfuscation
+            const emailLinks = document.querySelectorAll('.email-link');
+            emailLinks.forEach(link => {
+                const user = link.getAttribute('data-user');
+                const domain = link.getAttribute('data-domain');
+                const email = `${user}@${domain}`;
+                link.href = `mailto:${email}`;
+
+                if (link.textContent.includes('(a)')) {
+                    link.textContent = email;
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
